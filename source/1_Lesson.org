@@ -140,7 +140,7 @@ How do you do it?
           
 #+END_SRC
 - Try to describe the steps you used to the person next to you. 
-- Is your solution more efficient?
+- Is your solution more efficient than your peers?
 
 * Computational Thinking
 :PROPERTIES:
