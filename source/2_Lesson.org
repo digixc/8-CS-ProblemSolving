@@ -1,0 +1,191 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:AUTHOR num:1 creator:AUTHOR timestamp:nil toc:nil html-style:nil
+#+TITLE:Computational Thinking
+#+AUTHOR: X Ellis
+
+#+BEGIN_HTML
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/digixc/8-CS-ProblemSolving">Fork me on GitHub</a>
+    </div>
+  </div>
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="6_Lesson.html">Week6</a></>
+      <li><a href="assessment.html">Assessment</a></li>
+
+    </ul>
+  </div>
+#+END_HTML
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END
+
+* Computational Thinking
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It 
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END: 
+- Lets recap:
+  - *Computational thinking* is the thought processes of understanding a problem and presenting its solution(s) in such a way that a computer or human can understand and a computer can effectively carry out.
+- Lets break down the concept above:
+  1. understanding the problem
+  2. presenting the solutions so a computer or human can understand
+  3. a computer can carry out solving the problem based on the solutions presented to it
+** Try It 
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END: 
+- Lets consider the following sequence of numbers.  The problem to be solved is to find the largest number:
+#+BEGIN_SRC 
+10 12 8 9 6 15 20 14
+
+#+END_SRC
+=Step 1=: understanding the problem.  This is very important step.  We need to know what exactly the problem is.  In this case, 
+   + to find the largest number from the given sequence
+
+=Step 2=:  presenting the solution so a computer or human can understand. 
+     1. What does it mean by *presenting the problem*?   
+        - This means describing the problem in some fashion. For a human to understand, we can use text or diagram. 
+        - The following is a solution to the finding the largest number problem described in text:
+         #+BEGIN_SRC 
+  1  Start from the first number in the list
+  2       
+  3  if the first number is larger or equal to the next number
+  4      make the first number the largest number
+  5  else
+  6      make the next number the largest number
+  7  Move to the next number
+  8  Repeat the steps 3 to 7 until the last number is compared 
+
+         #+END_SRC
+*But*
+     2. How to present the solution so a computer can understand? This is where computer programming languages come to play. Humans use programming languages to present/describe the solution to a computer. This is called implementation of the solution in programming language.
+         - The following is the implemented solution using Python.
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/f99d6c2127" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+=Step 3=: Computers follow the instructions from the solution presented to carry out solving the problem as demonstrated above. 
+
+* Algorithmic Thinking in Computational Thinking
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END: 
+
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END: 
+- In the previous finding the largest number problem, we have learned 3 equally important aspects of problem solving in computing:
+  1. understanding the problem
+  2. describeing/presenting the solution so a human or a computer can understand
+  3. implementing the problem using programming language
+ 
+- Lets focus on the step 2: describe/present the solution so a computer/human can understand. We did this by using a sequence of text or plain English but with some structure to make the solution easier for a human to follow.
+- A solution given in step by step instructions is called an *algorithm*. 
+- *Algorithmic thinking* is to have a solution to a problem, and the solution is such that it can be described in a sequence of instructions.
+- If we have an algorithm, then we can write a program to do it.
+- Computer programs are just algorithms written out in a programming language so computers can understand.
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END: 
+- Now, lets apply *computational thinking* to a simple problem and try to work out step by step.
+  #+BEGIN_SRC 
+  Given a sequence of numbers: 45 67 -9 12 -92 -10 44
+  Find all positive numbers in the given sequence
+  #+END_SRC
+- Try to work out the following by yourself:
+  1. understanding the problem.
+  2. using *algorithmic thinking*, and plain but structured English to present a solution to the given problem so your peers can understand.
+  3. try to implement the solution you created in step 2 in Python.
+  4. run the Python program to see if it works.
+** Badge It - Silver
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: silver
+:END:
+- Upload your written understanding of the above given problem to www.bournetolearn.com. Your work must include your understanding of positive numbers.
+** Badge It - Gold
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: gold
+:END:
+- Your solution (algorithm) to the problem above in structured English. Upload your work to www.blournetolearn.com
+** Badge It - Platinum
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: platinum
+:END:
+- Screenshot of your implemented working solution in Python and upload to www.bournetolearn.com
