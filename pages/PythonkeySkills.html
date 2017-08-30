@@ -3,10 +3,9 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Problem Solving</title>
+<title>Python Kill Skills</title>
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
-<meta  name="author" content="X Ellis" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center; }
@@ -87,7 +86,7 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="pages/css/styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
 /*
@@ -138,54 +137,193 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Problem Solving</h1>
-<div class="github-fork-ribbon-wrapper left">
-  <div class="github-fork-ribbon">
-    <a href="https://github.com/digixc/8-CS-ProblemSolving">Fork me on GitHub</a>
-  </div>
+<h1 class="title">Python Kill Skills</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Python Key Skills</a>
+<ul>
+<li><a href="#sec-1-1">Learn It - convert from number data type to string</a></li>
+<li><a href="#sec-1-2">Learn It - comparing values and comparators</a></li>
+<li><a href="#sec-1-3">Learn It - create an array of numbers or strings</a></li>
+<li><a href="#sec-1-4">Learn It - array index and get an item from an array</a></li>
+<li><a href="#sec-1-5">Learn It - swap the positions of two items in an array</a></li>
+</ul>
+</li>
+</ul>
 </div>
-<div id="outline-container-sec-1" class="outline-2 link-heading">
-<h2 id="sec-1"><a href="pages/1_Lesson.html">Week 1 - The First Encounter</a></h2>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2 activity">
+<h2 id="sec-1"><span class="section-number-2">1</span> Python Key Skills</h2>
 <div class="outline-text-2" id="text-1">
 </div>
+<div id="outline-container-sec-1-1" class="outline-3 learn">
+<h3 id="sec-1-1">Learn It - convert from number data type to string</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<div class="org-src-container">
+
+<pre class="src src-Python">myName = "Jack"   # A string
+myAge = 5         # A number
+
+# To convert myAge to a string so we can make a longer string to display:
+print(myName + " : " + str(myAge))
+</pre>
 </div>
-<div id="outline-container-sec-2" class="outline-2 link-heading">
-<h2 id="sec-2"><a href="pages/2_Lesson.html">Week 2 - Computational Thinking</a></h2>
-<div class="outline-text-2" id="text-2">
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2 link-heading">
-<h2 id="sec-3"><a href="pages/3_Lesson.html">Week 3 - Algorithms</a></h2>
-<div class="outline-text-2" id="text-3">
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2 link-heading">
-<h2 id="sec-4"><a href="pages/4_Lesson.html">Week 4 - Breaking It Down</a></h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-1-2" class="outline-3 learn">
+<h3 id="sec-1-2">Learn It - comparing values and comparators</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Comparators check if a value is (or is not) equal to, greater than (or equal to), or less than (or equal to) another value. 
+</li>
+<li>The result of comparator operation is always a Boolean vale - <code>True</code> or <code>False</code>
+</li>
+<li>Depending on the comparing outcome, the program then decide what to do next.
+</li>
+<li>Python has the following comparators: 
+<ul class="org-ul">
+<li>logical operators
+<ul class="org-ul">
+<li>Equality, ==
+</li>
+<li>Not equal, !=
+</li>
+<li>Greater Than, &gt;
+</li>
+<li>Less Than, &lt;
+</li>
+<li>Greater than or equal to, &gt;=
+</li>
+<li>Less than or equal to, &lt;=
+</li>
+</ul>
+</li>
+<li>Boolean operators: and, or, not
+<ul class="org-ul">
+<li><code>and</code>: evaluates to True when both clauses (expressions) are True
+</li>
+<li><code>or</code>: evaluates to True when either of the expressions are True
+</li>
+<li><code>not</code>: evaluates to True when the expression is False. Evaluates to False when the expression is True.
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Example usages of comparators
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-Python">hunger = True
+numberOfPizza = 5
+drink="fizzyPop"
+
+if numberOfPizza &gt;= 3:
+   print("Have some pizza, since we have 3 or more")
+else:
+   print("You cannot have any pizza")
+
+
+if hunger == True and numberOfPizza &gt;= 1:
+   print("You are hungry, and there is at least one pizza")
+else:
+   print("Either you are not hungry or the food is not pizza")
+
+if not drink == "fizzyPop":
+   print("No drink for me.")
+
+#The above is same as:
+if drink != "fizzyPop":
+   print("No drink for me.")
+</pre>
+</div>
 </div>
 </div>
 
-<div id="outline-container-sec-5" class="outline-2 link-heading">
-<h2 id="sec-5"><a href="pages/5_Lesson.html">Week 5 - Problem Solved!</a></h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-sec-1-3" class="outline-3 learn">
+<h3 id="sec-1-3">Learn It - create an array of numbers or strings</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<div class="org-src-container">
+
+<pre class="src src-Python"># An array of numbers
+testScores = [98, 78, 65, 89, 75]
+
+# An array of strings
+names = ['Jack', 'Kerry', 'Julia', 'Matthew', 'David']
+</pre>
 </div>
-</div>
-<div id="outline-container-sec-6" class="outline-2 link-heading">
-<h2 id="sec-6"><a href="pages/6_Lesson.html">Week 6 - How Do We Know?</a></h2>
-<div class="outline-text-2" id="text-6">
 </div>
 </div>
 
-<div id="outline-container-sec-7" class="outline-2 link-heading">
-<h2 id="sec-7"><a href="pages/assessment_guidance.html">Assessment</a></h2>
-<div class="outline-text-2" id="text-7">
+
+<div id="outline-container-sec-1-4" class="outline-3 learn">
+<h3 id="sec-1-4">Learn It - array index and get an item from an array</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Each individual data pieces is called an item
+</li>
+<li>Each item has a position number called <code>index</code>
+</li>
+<li>For the following array, names, "Jack" is at index 0.
+</li>
+<li>To get "Jack", you use <code>names[0]</code>
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-Python"># An array of strings
+names = ['Jack', 'Kerry', 'Julia', 'Matthew', 'David']
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/arrayIndex.png" alt="arrayIndex.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3 learn">
+<h3 id="sec-1-5">Learn It - swap the positions of two items in an array</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>Swap the position of "Jack" with "Julia"
+<ol class="org-ol">
+<li>Method 1: use a temporary variable 
+<div class="org-src-container">
+
+<pre class="src src-Python">names = ['Jack', 'Kerry', 'Julia', 'Matthew', 'David']
+
+temp = names[0]
+names[0] = names[2]
+names[2] = temp
+</pre>
+</div>
+</li>
+<li>Method 2: in place swap
+<div class="org-src-container">
+
+<pre class="src src-Python">names = ['Jack', 'Kerry', 'Julia', 'Matthew', 'David']
+
+names[0],names[2] = names[2],names[0]
+</pre>
+</div>
+</li>
+</ol>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: X Ellis</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"></p>
 </div>
 </body>

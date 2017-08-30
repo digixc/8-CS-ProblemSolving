@@ -119,7 +119,7 @@
 =Step 2=:  presenting the solution so a computer or human can understand. 
      1. What does it mean by *presenting the problem*?   
         - This means describing the problem in some fashion. For a human to understand, we can use text or diagram. 
-        - The following is a solution to the finding the largest number problem described in text:
+        - The following is a solution to the finding the largest number problem described in plain but structured English:
          #+BEGIN_SRC 
   1  Start from the first number in the list
   2       
@@ -132,14 +132,14 @@
 
          #+END_SRC
 *But*
-     2. How to present the solution so a computer can understand? This is where computer programming languages come to play. Humans use programming languages to present/describe the solution to a computer. This is called implementation of the solution in programming language.
+     2. How to present the solution so a computer can understand? This is where computer programming languages come to play. Humans use programming languages to present/describe the solution to a computer. This is called =implementation of the solution= in programming language.
          - The following is the implemented solution using Python.
+
+
+=Step 3=: Computers follow the instructions from the solution presented to carry out solving the problem. Run the program below and see if the solution works.  
 #+BEGIN_HTML
 <iframe src="https://trinket.io/embed/python/f99d6c2127" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 #+END_HTML
-
-
-=Step 3=: Computers follow the instructions from the solution presented to carry out solving the problem as demonstrated above. 
 
 * Algorithmic Thinking in Computational Thinking
 :PROPERTIES:
