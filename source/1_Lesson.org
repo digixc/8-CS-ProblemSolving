@@ -3,7 +3,7 @@
 #+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 #+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 #+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
-#+OPTIONS: f:nil author:AUTHOR num:1 creator:AUTHOR timestamp:nil toc:nil html-style:nil
+#+OPTIONS: f:nil author:AUTHOR num:1 creator:AUTHOR timestamp:nil toc:nil html-style:nil html-postamble:nil
 #+TITLE: How A Computer Works
 #+AUTHOR: X Ellis
 
@@ -105,35 +105,9 @@
      By [[https://commons.wikimedia.org/w/index.php?curid%3D85401][André Karwath aka Aka]] - Own work, CC BY-SA 2.5
 
 - Lets work through some problems and see how you solve them.
-#+BEGIN_SRC 
-Problem 1: You have accidentally broken your mum's favourite mug.
-Solutions:
-         A. You clean up all the mess and destroy the evidence
-         B. You quickly buy a replacement before your mum notices it
-         C. You apologise and hope for forgiveness
-         D. You glue the mug back and apologise
-         E. You do other chores to make up for the damage
-
-What is your solution? Why?
-#+END_SRC
-- Can you describe the steps and reasons you followed to reach your solution for the above problem to the person next to you?
 
 #+BEGIN_SRC 
-Problem 2: You are playing a game in the TV room and your little 
-           brother or sister is sitting next to you. As soon as you put
-           down the controller, you know you will not get it back from 
-           him or her for a long time. But your mum is calling you 
-           urgently and she does not like seeing anyone taking the
-           controller away from the TV room.
- 
- What will you do? 
-#+END_SRC
-
-- Can you describe the steps you followed to solve the above problem to the person next to you?
-
-
-#+BEGIN_SRC 
-Problem 3: You have been asked by your teacher to rank the quiz score 
+Problem 1: You have been asked by your teacher to rank the quiz score 
            in your form for each of the 8 teams from the highest to the lowest.
            
 How do you do it? 
@@ -141,6 +115,20 @@ How do you do it?
 #+END_SRC
 - Try to describe the steps you used to the person next to you. 
 - Is your solution more efficient than your peers?
+
+
+#+BEGIN_SRC 
+Problem 2: You have walked to your school along the same route for months
+ with your two of your best friend. You meet them up along the way. 
+ But you have just made another friend and you want to meet him along
+ the way. You need to adjust your route so that you don't have to walk
+ unneccessary distance. See the map below.
+#+END_SRC
+[[./img/streetMapRoute.jpeg]]
+
+- Can you describe the steps and reasons you followed to reach your solution for the above problem to the person next to you?
+- Think how complex the problem would be if you have to meet up with more friends on your way to school.
+- How parcel delivery companies plan their delivery routes? 
 
 * Computational Thinking
 :PROPERTIES:
