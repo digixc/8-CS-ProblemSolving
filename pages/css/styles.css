@@ -421,3 +421,6 @@ math {
 #stickyribbon li a:hover {
   color: #E5DCE9;
 }
+.strike {
+  text-decoration: line-through;
+}
