@@ -187,7 +187,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: gold
 :END:
-- Your solution (algorithm) to the problem above in structured English. Upload your work to www.blournetolearn.com. 
+- Your solution (algorithm) to the problem above in structured English. Upload your work to www.bournetolearn.com. 
 - Your algorithm should meet the criteria that it can be understood by a human or for a human to follow to find all positive numbers in a list.
 ** Badge It - Platinum
 :PROPERTIES:
