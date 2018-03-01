@@ -212,11 +212,21 @@ if B=A:
 #+BEGIN_HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Bg3pfUqdLp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 #+END_HTML
-* Badge It - Literacy
+** Badge It - Literacy
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: literacy
 :END:
 - Upload your notes of what information was kept or removed from the London Tube Map.
 - Using the software of your choice to create a User Guide on how to decompose a problem, including an example.
 
+** Badge It - platinum
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: platinum
+:END:
 
+1. We have used flowchart to present a solution on checking if a number is even or odd.
+2. We also used psuedo-code to present a solution on guessing the number game.
+- To gain this badge, you need to implement a solution using Python to *one* of the two problems.
+*hints*:
+- for problem 1, you need to know [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/PythonKeySkills2.html#sec-1-2][how to tell if a number is even or odd]]
+- for problem 2. you need to know [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/PythonKeySkills.html#sec-1-6][how to use a random module in Python to generate random number.]]
