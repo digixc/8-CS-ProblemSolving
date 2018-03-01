@@ -92,7 +92,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
-* Coming soon 
+* Put Everything Together to Solve Problems
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -100,7 +100,87 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- coming soon
+- Lets recap:
+  - *Computational thinking* is the thought processes of understanding a problem and presenting its solution(s) in such a way that a computer or human can understand and a computer can effectively carry out.
+
+- Solving a problem involves:
+  - Understand the problem
+  - breakdown the problem into smaller problems - *decomposition*
+  - Focus on important details to reach a solution - *Abstraction*
+  - Look for similarities - *Pattern Recognition*
+  - Create a step by step instructions to solve the problem - *algorithm*
+
+-It is easier to spot patterns in pictures than in numbers. Lets use the following image as an example for us to learn the whole process of *problem solving*.
+- The problem for you is to create the same image using Python's turtle module.
+#+BEGIN_HTML
+<img src='./img/turtleFlower.png' width=40% height=40%>
+#+END_HTML
 
 
+- Steps:
+  1. What smaller part of the problem can you identify? 
+  2. Are there any patterns? What are the patterns?
+  3. Not to concern yourself with how to pick the colours and and fill the shapes yet - just focus on the important part of the task for now.
+  4. Can you use any one of the three methods, psuedo-code, structured English and flowchart to describe your algorithms?
 
+- Hopefully you have identified the following:
+  1. The image is made up by solid circles
+  2. The blue circles are evenly distributed - a pattern
+  3. If you can make a circle using Python turtle module first, then ....
+** Try It - Decomposing: solving the smaller tasks first
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+- So, lets try to make one circle first.
+- From our term 1 turtle unit, we have learned that a turtle needs to move and turn at an angle in order to come back where the turtle started.
+- To draw a circle, in order to calculate how much to turn and move, we need to know the circle's radius.  
+- Lets store this radius in a variable called R. R can be any number depending on the size of the circle.
+- If we want the turtle to move in 360 steps, then each step should be the circle's circumference divided by 360 and the turning angle should be 360^o/360 = 1^o
+#+BEGIN_SRC 
+a circle's circumference is calculates as following:
+      2*R*3.14    where 3.14 is pi, R is the radius
+
+#+END_SRC
+- If we want the turtle to move in less steps, say in 180 steps, then each step should be the circle's circumference divided by 180 and the turning angle should be 360^o/180 = 2^o
+- If we can create a function called circle, then we can use it again later for all the circles in the image.
+- The following code in the trinket can draw one filled circle with radius 40. Can you try to create a circle function with the radius as a parameter so that function can be called to create circles with any radius?
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/27eb6bd59b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
+** Badge It - Circle function
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: silver
+:END:
+
+- Use the code given above, create a circle function with the radius as a parameter so that function can be called to create circles with any radius.
+- You must test your solution by calling the function. Upload your solution. Your function should begin with :
+#+BEGIN_SRC python
+def circle(radius):
+    your code goes here!
+
+#+END_SRC
+** Badge It - Blossom
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: gold
+:END:
+
+- Work in pair, use psuedo-code, or structured English or flowchart to descibe the algorithm to produce the complete flower.
+- Implement your algorithm in Python by starting off your finished Silver code.
+- upload your algorithm and Python code.
+
+
+** Badge It - Platinum
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: platinum
+:END:
+- Take look at the following image.
+#+BEGIN_HTML
+<img src="./img/turtleCircles.png" width=200 height=200>
+#+END_HTML
+- Identify the pattern and finished the implementation by using the basic code below.
+
+#+BEGIN_HTML
+
+<iframe src="https://trinket.io/embed/python/d89a17c650" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML

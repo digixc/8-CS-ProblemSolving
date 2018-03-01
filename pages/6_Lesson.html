@@ -80,16 +80,153 @@ for the JavaScript code in this tag.
   </div>
 
 <div id="outline-container-sec-1" class="outline-2 activity">
-<h2 id="sec-1"><span class="section-number-2">1</span> Coming soon</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> Put Everything Together to Solve Problems</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 <div id="outline-container-sec-1-1" class="outline-3 learn">
 <h3 id="sec-1-1">Learn It</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
-<li>coming soon
+<li>Lets recap:
+<ul class="org-ul">
+<li><b>Computational thinking</b> is the thought processes of understanding a problem and presenting its solution(s) in such a way that a computer or human can understand and a computer can effectively carry out.
 </li>
 </ul>
+</li>
+
+<li>Solving a problem involves:
+<ul class="org-ul">
+<li>Understand the problem
+</li>
+<li>breakdown the problem into smaller problems - <b>decomposition</b>
+</li>
+<li>Focus on important details to reach a solution - <b>Abstraction</b>
+</li>
+<li>Look for similarities - <b>Pattern Recognition</b>
+</li>
+<li>Create a step by step instructions to solve the problem - <b>algorithm</b>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+-It is easier to spot patterns in pictures than in numbers. Lets use the following image as an example for us to learn the whole process of <b>problem solving</b>.
+</p>
+<ul class="org-ul">
+<li>The problem for you is to create the same image using Python's turtle module.
+</li>
+</ul>
+<img src='./img/turtleFlower.png' width=40% height=40%>
+
+
+<ul class="org-ul">
+<li>Steps:
+<ol class="org-ol">
+<li>What smaller part of the problem can you identify? 
+</li>
+<li>Are there any patterns? What are the patterns?
+</li>
+<li>Not to concern yourself with how to pick the colours and and fill the shapes yet - just focus on the important part of the task for now.
+</li>
+<li>Can you use any one of the three methods, psuedo-code, structured English and flowchart to describe your algorithms?
+</li>
+</ol>
+</li>
+
+<li>Hopefully you have identified the following:
+<ol class="org-ol">
+<li>The image is made up by solid circles
+</li>
+<li>The blue circles are evenly distributed - a pattern
+</li>
+<li>If you can make a circle using Python turtle module first, then &#x2026;.
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3 try">
+<h3 id="sec-1-2">Try It - Decomposing: solving the smaller tasks first</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<ul class="org-ul">
+<li>So, lets try to make one circle first.
+</li>
+<li>From our term 1 turtle unit, we have learned that a turtle needs to move and turn at an angle in order to come back where the turtle started.
+</li>
+<li>To draw a circle, in order to calculate how much to turn and move, we need to know the circle's radius.  
+</li>
+<li>Lets store this radius in a variable called R. R can be any number depending on the size of the circle.
+</li>
+<li>If we want the turtle to move in 360 steps, then each step should be the circle's circumference divided by 360 and the turning angle should be 360<sup>o</sup>/360 = 1<sup>o</sup>
+</li>
+</ul>
+<pre class="example">
+a circle's circumference is calculates as following:
+      2*R*3.14    where 3.14 is pi, R is the radius
+</pre>
+<ul class="org-ul">
+<li>If we want the turtle to move in less steps, say in 180 steps, then each step should be the circle's circumference divided by 180 and the turning angle should be 360<sup>o</sup>/180 = 2<sup>o</sup>
+</li>
+<li>If we can create a function called circle, then we can use it again later for all the circles in the image.
+</li>
+<li>The following code in the trinket can draw one filled circle with radius 40. Can you try to create a circle function with the radius as a parameter so that function can be called to create circles with any radius?
+</li>
+</ul>
+<iframe src="https://trinket.io/embed/python/27eb6bd59b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3 silver">
+<h3 id="sec-1-3">Badge It - Circle function</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<ul class="org-ul">
+<li>Use the code given above, create a circle function with the radius as a parameter so that function can be called to create circles with any radius.
+</li>
+<li>You must test your solution by calling the function. Upload your solution. Your function should begin with :
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-python">def circle(radius):
+    your code goes here!
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3 gold">
+<h3 id="sec-1-4">Badge It - Blossom</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<ul class="org-ul">
+<li>Work in pair, use psuedo-code, or structured English or flowchart to descibe the algorithm to produce the complete flower.
+</li>
+<li>Implement your algorithm in Python by starting off your finished Silver code.
+</li>
+<li>upload your algorithm and Python code.
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-5" class="outline-3 platinum">
+<h3 id="sec-1-5">Badge It - Platinum</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>Take look at the following image.
+</li>
+</ul>
+<img src="./img/turtleCircles.png" width=200 height=200>
+<ul class="org-ul">
+<li>Identify the pattern and finished the implementation by using the basic code below.
+</li>
+</ul>
+
+
+<iframe src="https://trinket.io/embed/python/d89a17c650" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 </div>
