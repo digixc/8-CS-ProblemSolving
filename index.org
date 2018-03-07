@@ -39,7 +39,7 @@
 :HTML_CONTAINER_CLASS: link-heading
 :END:
 
-* [[file:pages/assessment_guidance.html][Assessment]]
+* [[file:pages/homework.html][Homework]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
