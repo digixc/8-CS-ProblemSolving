@@ -116,7 +116,7 @@ Your task:
 - Describe briefly on how you approach the problem 
 - Once finished, upload  to www.bournetolearn.com or hand in to your teacher your solution along with your note.
 
-
+[[./img/cutBlockPuzzle.png]]
 ** Homework 2 - Coming soon
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
