@@ -213,7 +213,7 @@ Pattern 3:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: gold
 :END:
-- Visit[[http://similarminds.com/cgi-bin/int.pl][ this site]]
+- Visit[[http://similarminds.com/intdoor.html][ this site]]
 - This will test your pattern recognition skills! There are 15 patterns to test. 
 - Score at least 8/15 and upload a screenshot as proof.
 
