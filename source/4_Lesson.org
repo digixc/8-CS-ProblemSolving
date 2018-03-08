@@ -23,7 +23,7 @@
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
 
-      <li><a href="assessment.html">Assessment</a></li>
+      <li><a href="homework.html">Homework</a></li>
 
     </ul>
   </div>
@@ -100,7 +100,7 @@
 :HTML_CONTAINER_CLASS: learn
 :END:
 - In the last lesson we looked at how to use structured English to describe specific steps to solve a problem.
-- Sometimes, the problem is complex or seemingly complex. A common approach to solve a complex problem is to break down the problem into smaller, easier to solve problems.  Afte we solved each of those smaller problems, the complex problem is solved.
+- Sometimes, the problem is complex or seemingly complex. A common approach to solve a complex problem is to break down the problem into smaller, easier to solve problems.  After we solved each of those smaller problems, the complex problem is solved.
 - The above approach to problem solving is called *divid-and-conquer*. 
 - In computer science, to breaking down a problem into smaller, easier to solve problems is called *decomposition*.
 - Let's try *decomposition* on the following not so complex problem:
@@ -128,7 +128,7 @@ will output it is an even or an odd number.
 [[./img/flowchart-odd-number.svg]]
 - The above problem has been decomposed into three parts:
   1. a user input a number
-  2. determine if the numbe is even or odd
+  2. determine if the number is even or odd
   3. output the appropriate message depending on the above step
 ** Try It
 :PROPERTIES:
