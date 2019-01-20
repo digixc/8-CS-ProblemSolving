@@ -1,0 +1,144 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:nil num:nil creator:nil timestamp:nil toc:nil html-style:nil
+#+TITLE: Problem Solving
+#+AUTHOR: Xiaohui Ellis
+#+BEGIN_HTML
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/digixc/7-CS-webDesign.git">Fork me on GitHub</a>
+    </div>
+  </div>
+<div id="stickyribbon">
+    <ul>
+ <li><a href="0_Lesson.html">Overview</a></li>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="6_Lesson.html">Week6</a></li>
+
+    </ul>
+  </div>
+
+
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+
+#+END_HTML
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+* Overview of this Unit.
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+
+** This unit is designed for you to work towards the following strands of your progress ladder:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+
+*Algorithms* (between Green and Blue)
+- Design simple *algorithms* using sequences, loops, and selection i.e. if statements.
+- Design solutions by *decomposing* a problem into smaller, solvable problems and create a sub-solution for each of these parts 
+- Understand that algorithms are *implemented* on digital devices as programs. Uses logical reasoning to predict outcomes.
+- Understand *abstraction* in problem solving means removing unimportant details to solutions. 
+- Understands that *iteration* is the *repetition of a process* such as a loop.
+
+*Programming & Development* (between Green and Blue)
+- Creates programs that implement algorithms to achieve given goals. 
+- Declares and assigns variables, appropriate use of sequence, selection (if statement) and repetition (loops) in reaching a solution.
+- Understands that programming bridges the gap between algorithmic solutions and computers.
+- Designs, writes and debugs modular programs using functions.
+** Key Words and Key Concepts
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+
+
+- agorithm
+- computational thinking
+- abstraction
+- pattern recognition
+- flowchart
+- pseudo-code
+- sequence
+- selection
+- repetition

@@ -12,6 +12,10 @@
   </div>
 
 #+END_HTML
+* [[file:pages/0_Lesson.html][Unit Overview]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: link-heading
+:END:
 * [[file:pages/1_Lesson.html][Week 1 - The First Encounter]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
@@ -39,6 +43,10 @@
 :HTML_CONTAINER_CLASS: link-heading
 :END:
 
+* [[file:pages/evaluation.html][End of Unit Evaluation]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: link-heading
+:END:
 * [[file:pages/homework.html][Homework]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading

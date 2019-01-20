@@ -8,7 +8,7 @@
 
 @scheme-color: #741371;
 @scheme-color-secondary:#E5DCE9;
-
+@objective-color: #d10162;
 
 /*YEAR 9 Colours*/
 /*
@@ -266,6 +266,15 @@ h1{
     max-width:1000px;
 }
 
+.objectives h2 {
+    font-size: 30px;
+    color: #FFF;
+    background: @objective-color;
+    margin-top: 30px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
 /* CSS for sub activities*/
 
 .learn h3{
@@ -325,6 +334,10 @@ h1{
 }
 .save h3{
     background-image: url(icons/Save.svg);
+}
+
+.objectives h3 {
+      background-image: url(icons/objectives.png);
 }
 
 h3 {
@@ -495,4 +508,62 @@ math{
 
 .strike {
   text-decoration: line-through;
+}
+
+/* CSS for overlay colours */
+
+#overlayMenu {
+  position: fixed;
+  right: -3em;
+  transition: 0.3s;
+  top: 40%;
+  width: 3em;
+  margin: -2.5em 0 0 0;
+  z-index: 5;
+  background: hsla(80, 90%, 40%, 0.8);
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  text-align: left;
+  border: solid hsla(80, 90%, 40%, 0.5);
+  border-right: none;
+  padding: 0.5em 0.5em 0.5em 1em;
+  box-shadow: 0 1px 3px black;
+  border-radius: 2em 0.5em 0.5em 2em;
+}
+
+#overlayMenu ul {
+    list-style-type: none;
+}
+
+#overlayMenu:hover{
+  right:0;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   /* background-color: rgba(0,0,0,0.5);*/
+    z-index: 2;
+    cursor: pointer;
+}
+
+#underlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   /* background-color: rgba(0,0,0,0.5);*/
+    z-index: 0;
+    cursor: pointer;
 }
