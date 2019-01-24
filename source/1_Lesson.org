@@ -5,7 +5,7 @@
 #+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
 #+HTML_HEAD_EXTRA: <script src="js/strikeThrough.js" type="text/javascript"></script>
 #+OPTIONS: f:nil author:AUTHOR num:1 creator:AUTHOR timestamp:nil toc:nil html-style:nil html-postamble:nil
-#+TITLE: How A Computer Works
+#+TITLE: Problem Solving
 #+AUTHOR: X Ellis
 
 #+BEGIN_HTML
@@ -26,6 +26,21 @@
 
     </ul>
   </div>
+
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
 #+END_HTML
 * COMMENT Use as a template
 :PROPERTIES:
@@ -90,6 +105,17 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing *Information Technology* learning strand, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Collects, organises and presents data and information in digital content. 
+- Makes judgements about digital contentwhen evaluating and repurposing it for a given audience.
+- Recognises the audience when designing and creating digital conten
 * Problems and Problem Solving
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -158,4 +184,5 @@ Problem 2: You have walked to your school along the same route for months
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
+*** Learning strand: *Information Technology*
 - Read[[http://www.bcs.org/content/ConWebDoc/55416][ this article]]. Use your own words, one paragraph each, list 4 things you have learned from the article on computational thinking.
