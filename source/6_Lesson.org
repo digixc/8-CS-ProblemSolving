@@ -27,6 +27,20 @@
 
     </ul>
   </div>
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
 #+END_HTML
 
 * COMMENT Use as a template
@@ -92,6 +106,19 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing *Programming and Development* learning strand, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- further develop problems solving skills by applying the following:
++ *pattern recognition*
++ *algorithmic thinking*
+- futher develop *programming skills* by implementing working solutions using *selection*, and *repetition* 
+- appreciate the need for, and writes, *custom functions* including use of parameters
 * Put Everything Together to Solve Problems
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -152,7 +179,7 @@ a circle's circumference is calculates as following:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: silver
 :END:
-
+*** Learning Strand: Programming and Development
 - Use the code given above, create a circle function with the radius as a parameter so that function can be called to create circles with any radius.
 - You must test your solution by calling the function. Upload your solution. Your function should begin with :
 #+BEGIN_SRC python
@@ -164,7 +191,7 @@ def circle(radius):
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: gold
 :END:
-
+*** Learning Strand: Programming and Development
 - Work in pair, use psuedo-code, or structured English or flowchart to descibe the algorithm to produce the complete flower.
 - Implement your algorithm in Python by starting off your finished Silver code.
 - upload your algorithm and Python code.
@@ -174,6 +201,7 @@ def circle(radius):
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: platinum
 :END:
+*** Learning Strand: Programming and Development
 - Take look at the following image.
 #+BEGIN_HTML
 <img src="./img/turtleCircles.png" width=200 height=200>

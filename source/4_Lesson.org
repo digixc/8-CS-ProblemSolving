@@ -3,7 +3,7 @@
 #+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 #+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 #+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
-#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil 
 
 #+TITLE: Break Down a Problem
 #+AUTHOR: Xiaohui Ellis
@@ -27,6 +27,20 @@
 
     </ul>
   </div>
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
 #+END_HTML
 * COMMENT Use as a template
 :PROPERTIES:
@@ -91,6 +105,24 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing *Algorithms* learning strand, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
++ develop problem solving skills by *decomposition*
++ learn how to represent *algorithms* using *flowchart*
++ learn how to represent *algorithms* using *pseudo-code*
++ Understand how *abstraction* can help solving complex problems
+** Developing *Programming and Development* learning strand, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
++ implement solutions using *selection* and *repetition*
++ develop further understanding that programming bridges the gap between algorithmic solutions and computers
 *  Decomposition
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -148,7 +180,7 @@ declared a winner. If the user guessed incorrectly, the computer will
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: silver
 :END:
-
+*** Learning Strand: Algorithms
 - Finish decomposing the problem by finishing all steps required to reach a solution.
 - Create a flowchart using appropriate symbols for your steps.
 - Upload both your *steps* and *flowchart* to www.bournetolearn.com
@@ -192,6 +224,7 @@ if B=A:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: gold
 :END:
+*** Learning Strand: Algorithms
 - We all know the game of rock, paper, scissors.
 - Try to decompose the game into smaller steps.
 - Create an algorithm in psuedo-code for this game and upload.
@@ -216,6 +249,7 @@ if B=A:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: literacy
 :END:
+*** Learning Strand: Literacy
 - Upload your notes of what information was kept or removed from the London Tube Map.
 - Using the software of your choice to create a User Guide on how to decompose a problem, including an example.
 
@@ -223,7 +257,7 @@ if B=A:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: platinum
 :END:
-
+*** Learning Strand: Programming and Development
 1. We have used flowchart to present a solution on checking if a number is even or odd.
 2. We also used psuedo-code to present a solution on guessing the number game.
 - To gain this badge, you need to implement a solution using Python to *one* of the two problems.

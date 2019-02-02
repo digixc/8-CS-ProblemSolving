@@ -27,6 +27,20 @@
 
     </ul>
   </div>
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
 #+END_HTML
 
 * COMMENT Use as a template
@@ -92,6 +106,17 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing *Algorithms* learning strand, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- further develop *pattern recognition* problem solving skills
+- develop *critical* and *logical* thinking skills
+
 * Computational Thinking
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -207,12 +232,14 @@ Pattern 3:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: silver
 :END:
+*** Learning Strand: Algorithms
 - Upload your solution to the Assassin Logic Puzzle from above – you should have included all details about each player involved and not just who the winner was.
 - Hint: A table may be a good way to figure out the solution and be a nice way to display this to your teacher
 ** Badge It – Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: gold
 :END:
+*** Learning Strand: Algorithms
 - Visit[[http://similarminds.com/intdoor.html][ this site]]
 - This will test your pattern recognition skills! There are 15 patterns to test. 
 - Score at least 8/15 and upload a screenshot as proof.
@@ -221,6 +248,7 @@ Pattern 3:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: platinum
 :END:
+*** Learning Strand: Algorithms
 - Push your problem solving skills to the limit! 
 - Try the following game.
   - It is in Chinese! Your job is to do the following:
