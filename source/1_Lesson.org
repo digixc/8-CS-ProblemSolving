@@ -179,7 +179,7 @@ Problem 2: You have walked to your school along the same route for months
    1. Humans must develop possible solutions
    2. Humans must present the solutions in a way computers can understand
    3. Computers can only help us solve problems
-   4. =Computational thinking= is the thought processes of understanding a problem and presenting its solution(s) in such a way that a computer 
+   4. =Computational thinking= is the thought processes of understanding a problem and presenting its solution(s) in such a way that a computer can follow and carry out the solution 
 ** Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge

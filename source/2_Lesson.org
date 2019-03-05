@@ -129,8 +129,8 @@
   - *Computational thinking* is the thought processes of understanding a problem and presenting its solution(s) in such a way that a computer or human can understand and a computer can effectively carry out.
 - Lets break down the concept above:
   1. understanding the problem
-  2. presenting the solutions so a computer or human can understand
-  3. a computer can carry out solving the problem based on the solutions presented to it
+  2. presenting the solutions so a computer can carry out or a human can understand
+  3. A computer carries out the solution means it can produce solutions by running programs/softare based on the solutions given/presented in some programming languages
 ** Try It 
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
@@ -155,7 +155,8 @@
   5  else
   6      make the next number the largest number
   7  Move to the next number
-  8  Repeat the steps 3 to 7 until all the number in the list is compared 
+  8  Repeat the steps 3 to 7 until all the number in the list is compared
+  9  Output the largest number 
 
          #+END_SRC
        *But*
@@ -178,14 +179,14 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END: 
-- In the previous finding the largest number problem, we have learned 3 equally important aspects of problem solving in computing:
+- In the previous *finding the largest number problem*, we have learned 3 equally important aspects of problem solving in computing:
   1. understanding the problem
   2. describeing/presenting the solution so a human or a computer can understand
   3. implementing the problem using programming language
  
 - Lets focus on the step 2: describe/present the solution so a computer/human can understand. We did this by using a sequence of text or plain English but with some structure to make the solution easier for a human to follow.
 - A solution given in step by step instructions is called an *algorithm*. 
-- *Algorithmic thinking* is to have a solution to a problem, and the solution is such that it can be described in a sequence of instructions.
+- *Algorithmic thinking* is to have a solution to a problem, and the solution is such that it can be described in *a sequence of instructions*.
 - If we have an algorithm, then we can write a program to do it.
 - Computer programs are just algorithms written out in a programming language so computers can understand.
 ** Try It
