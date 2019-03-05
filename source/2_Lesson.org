@@ -206,9 +206,9 @@
   1. understanding the problem.
   2. using *algorithmic thinking*, and plain but structured English to present a solution to the given problem so your peers can understand.
   3. try to implement the solution you created in step 2 in Python. To implement it, you need:
-     + [[../../CS-PythonKeySkills/pages/PythonkeySkills.html#sec-1-3][create a list]] to hold the numbers
-     + use a loop ([[../../CS-PythonKeySkills/pages/PythonkeySkills2.html#sec-1-1][for or while loop]]) to go through the list
-     + use [[../../CS-PythonKeySkills/pages/PythonkeySkills.html#sec-1-2][if statement]] to decide if a number is positive or not 
+     + [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/1_Part.html#sec-1-3][create a list]] to hold the numbers
+     + use a loop ([[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/2_Part.html#sec-1-1][for or while loop]]) to go through the list
+     + use [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/1_Part.html#sec-1-2][if statement]] to decide if a number is positive or not 
   4. run the Python program to see if it works.
 ** Badge It - Silver
 :PROPERTIES:
