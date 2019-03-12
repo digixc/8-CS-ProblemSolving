@@ -262,5 +262,5 @@ if B=A:
 2. We also used psuedo-code to present a solution on guessing the number game.
 - To gain this badge, you need to implement a solution using Python to *one* of the two problems.
 *hints*:
-- for problem 1, you need to know [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/PythonKeySkills2.html#sec-1-2][how to tell if a number is even or odd]]
-- for problem 2. you need to know [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/PythonKeySkills.html#sec-1-6][how to use a random module in Python to generate random number.]]
+- for problem 1, you need to know [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/1_Part.html#sec-1-7][how to tell if a number is even or odd]]
+- for problem 2. you need to know [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/1_Part.html#sec-1-6][how to use a random module in Python to generate random number.]]
