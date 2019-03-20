@@ -117,12 +117,33 @@ Your task:
 - Once finished, upload  to www.bournetolearn.com or hand in to your teacher your solution along with your note.
 
 [[./img/cutBlockPuzzle.png]]
-** Homework 2 - Coming soon
+** Homework 2 - Look for the something?
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-
-	 
++ Search for data or information happens everyday. 
++ Examples of search may include small task of find an item you just paid for from a receipt with all the items you just purchased to big task of police force searches for suspects from possibly millions of persons.
++ To search an item from a receipt is easy for a human but search for a suspect from millions of others is much much harder for a human.
++ There are many algorithms exist for =search=, some are better than others.
++ Suppose you are given a list of items as below:
+#+BEGIN_SRC 
+Egg 
+Milk
+Bread
+Chocolate
+Orange juice
+Oil
+Chips
+Tomato
+Sparkling water
+Apple
+Lime
+#+END_SRC	 
++ If a list is short, we can quickly scan the list, either find or not find the item.
++ But if the list if very long, what you do? we may need to scan the list one item after another from the beginning.
+** Your tasks:
+1. Use pen and paper, word or[[http://draw.io][ this website]] to create a flowchart of your algorithm on how to search for any item from a list of any length.
+2. Look at the list given above, try to suggest a way to improve the efficiency of your search algorithm.
 ** Homework 3 - Coming Soon
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
