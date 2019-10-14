@@ -4,14 +4,14 @@
 #+OPTIONS: f:nil author:AUTHOUR num:nil creator:AUTHOUR timestamp:nil toc:nil html-postamble:nil  
 #+TITLE: Problem Solving
 #+AUTHOR: X Ellis
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
       <a href="https://github.com/digixc/8-CS-ProblemSolving">Fork me on GitHub</a>
     </div>
   </div>
 
-#+END_HTML
+#+END_EXPORT
 * [[file:pages/0_Lesson.html][Unit Overview]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
@@ -29,7 +29,7 @@
 :HTML_CONTAINER_CLASS: link-heading
 :END:
 
-* [[file:pages/4_Lesson.html][Week 4 - Breaking It Down]]
+* [[file:pages/4.1_Lesson.html][Week 4 - Breaking It Down]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
