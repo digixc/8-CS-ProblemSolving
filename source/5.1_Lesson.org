@@ -1,0 +1,253 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil 
+
+#+TITLE: Flowing Flowcharts
+#+AUTHOR: James Brown
+
+#+BEGIN_EXPORt html
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/digixc/8-CS-ProblemSolving">Fork me on GitHub</a>
+    </div>
+  </div>
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="6_Lesson.html">Week6</a></li>
+
+      <li><a href="homework.html">Homework</a></li>
+
+    </ul>
+  </div>
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+#+END_EXPORT
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing *Algorithms* learning strand, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
++ develop problem solving skills by *decomposition*
++ learn how to represent *algorithms* using *flowchart*
++ Understand how *abstraction* can help solving complex problems
+** Developing *Programming and Development* learning strand, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
++ implement solutions using *sequencing* and *repetition*
++ develop further understanding that programming bridges the gap between algorithmic solutions and computers
+* Sequencing
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It - Sequencing
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+- In the last lesson we looked at a program called Flowol that lets us use flowcharts to control and interact with situations called "mimics".
+- Today we are going to use Flowol to create a *sequence* of instructions to solve certain problems.
+- Computers follow instructions or sequences programmed into them. A flowchart can be used to help design a sequence. Actions can be ordered, reordered or removed if no longer necessary.
+
+*Task 1 - Zebra Crossing*
+
+- *Copy* this table by selecting it by clicking and dragging you mouse from the top left ot the bottom right.
+- *Paste* it into a PowerPoint slide and fill in the order column from 1 to 10 in the order in which they should take place.
+
+| Instruction                                                                     | Order |
+|---------------------------------------------------------------------------------+-------|
+| Walk to the island looking both ways and listening                              |       |
+| Step onto the second half of the zebra crossing                                 |       |
+| Stop at the island                                                              |       |
+| Step onto the first half of the zebra crossing                                  |       |
+| Stop at the side of the road looking to the other side of the Zebra crossing    |       |
+| Look right                                                                      |       |
+| Look left                                                                       |       |
+| Wait until traffic from the right has stopped or the road is clear              |       |
+| Walk to the other side of the road looking both was and listening               |       |
+| Stay on the island until traffic from the left has stopped or the road is clear |       |
+- In the last lesson we looked at how to use structured English to describe specific steps to solve a problem.
+- Sometimes, the problem is complex or seemingly complex. A common approach to solve a complex problem is to break down the problem into smaller, easier to solve problems.  After we solved each of those smaller problems, the complex problem is solved.
+- The above approach to problem solving is called *divid-and-conquer*. 
+- In computer science, to breaking down a problem into smaller, easier to solve problems is called *decomposition*.
+- Let's try *decomposition* on the following not so complex problem:
+#+BEGIN_SRC 
+ Write a program such that when a user inputs a number, the program
+will output it is an even or an odd number.
+#+END_SRC
+
+- To break down the above problem, we are going to use flowchart to help us. 
+- Flowcharts are very useful in visualising how algorithms work.
+
+* Algorithms with Flowchart
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It - flowcharts
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- A flowchart is a type of diagram that represents an algorithm, workflow or process, showing the steps as boxes of various kinds, and their order by connecting them with arrows.
+- Each shape represent some steps in the algorithm:
+[[./img/flowChartShapes.png]]
+- The following is a simple example of using flowchart to describe the steps to a simple problem of determing if an user's input numbers are odd or not. 
+#+BEGIN_EXPORT html
+<img src="./img/even-or-odd.png" width=400 height=400>
+#+END_EXPORT
+- The above problem has been decomposed into three parts:
+  1. a user input a number
+  2. determine if the number is even or odd
+  3. output the appropriate message depending on the above step
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+#+BEGIN_SRC 
+Write a computer game that allows a user to guess the number that is
+ picked by a computer. If the user guessed the number, the user is 
+declared a winner. If the user guessed incorrectly, the computer will
+ tell the user if the guess is too high or two low. 
+#+END_SRC
+- Try your *decomposition* skill with the above problem.
+- The first few steps have been started for you:
+  1. computer pick a number
+  2. a user input a number
+** Badget It - Silver
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: silver
+:END:
+*** Learning Strand: Algorithms
+- Finish decomposing the problem by finishing all steps required to reach a solution.
+- Create a flowchart using appropriate symbols for your steps.
+- Upload both your *steps* and *flowchart* to www.bournetolearn.com
+* Solving a real life problem with flowchart
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It - the light house
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Launch the application flowol, click on File->New and you should see something like the following:
+[[./img/flowol-1.PNG]]
+- Select the =lighthouse mimic= by clicking on it
+- The scenario or mimic has one input:the Sun and three outputs: Lamp, Lights and Foghorn
+[[./img/flowol-lighthouse-1.PNG]]
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- flowol is simple to use once you know it
+- See if you can work out how to create a flowchart as shown below:
+[[./img/flowol-lighthouse-2.PNG]]
+- If you stuck, ask your teacher to show you
+** Badge It - Gold
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: gold
+:END:
+*** Learning Strand: Algorithms
+- The above flowchart will make the three outputs flash on and off every two seconds
+- Your task is to create a flowhcart so that:
+  - when the Sun is down(off), all the three outputs will flash
+  - when the Sun is up (on), if the Lights are not on, the Foghorn should be on, and if the Lights are on, the Foghorn should be off.
+- Test your flowchart by clicking on the Sun to turn it on and off.
+- Screenshot your working flowchart and upload to BTL
+
+** Badge It - Platinum
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: platinum
+:END:
+*** Learning Strand: Algorithms
+
+- Now you are familar with how the software =flowol= works. 
+- The above mimic has all three outputs flash on and off. 
+- follow the steps shown in the image below to create a flash function:
+[[./img/flowol-define-function.png]]
+- Modify your flowchart from the Gold badge task to use this function. 
+- Test your flowchart as you have done with your Gold badge and upload the screenshot of your working flowchart to BTL.
