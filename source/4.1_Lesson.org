@@ -228,5 +228,7 @@ declared a winner. If the user guessed incorrectly, the computer will
 - The above mimic has all three outputs flash on and off. 
 - follow the steps shown in the image below to create a flash function:
 [[./img/flowol-define-function.png]]
+- Once you have created a function, the side menu will now have *Sub* block for you to use the functions you have created.
+[[./img/flowol-function.png]]
 - Modify your flowchart from the Gold badge task to use this function. 
 - Test your flowchart as you have done with your Gold badge and upload the screenshot of your working flowchart to BTL.
