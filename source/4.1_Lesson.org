@@ -214,7 +214,7 @@ declared a winner. If the user guessed incorrectly, the computer will
 - The above flowchart will make the three outputs flash on and off every two seconds
 - Your task is to create a flowhcart so that:
   - when the Sun is down(off), all the three outputs will flash
-  - when the Sun is up (on), if the Lights are not on, the Foghorn should be on, and if the Lights are on, the Foghorn should be off.
+  - when the Sun is up (on), all the outputs should be off.
 - Test your flowchart by clicking on the Sun to turn it on and off.
 - Screenshot your working flowchart and upload to BTL
 
