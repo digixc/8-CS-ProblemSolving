@@ -3,12 +3,12 @@
 #+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 #+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 #+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
-#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil 
 
-#+TITLE: Problem Solving
-#+AUTHOR: X Ellis
+#+TITLE: Selection
+#+AUTHOR: James Brown
 
-#+BEGIN_HTML
+#+BEGIN_EXPORt html
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
       <a href="https://github.com/digixc/8-CS-ProblemSolving">Fork me on GitHub</a>
@@ -23,7 +23,7 @@
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
 
-      <li><a href="assessment.html">Assessment</a></li>
+      <li><a href="homework.html">Homework</a></li>
 
     </ul>
   </div>
@@ -41,8 +41,7 @@
 <p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
 <p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
 </div>
-#+END_HTML
-
+#+END_EXPORT
 * COMMENT Use as a template
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -110,105 +109,108 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: objectives
 :END:
+** Developing *Algorithms* learning strand, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
++ learn how to represent *algorithms* using *flowchart*
++ Understand how *abstraction* can help solving complex problems
 ** Developing *Programming and Development* learning strand, specifically:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- further develop problems solving skills by applying the following:
-+ *pattern recognition*
-+ *algorithmic thinking*
-- futher develop *programming skills* by implementing working solutions using *selection*, and *repetition* 
-- appreciate the need for, and writes, *custom functions* including use of parameters
-* Put Everything Together to Solve Problems
++ implement solutions using *selection* and *repetition*
++ develop further understanding that programming bridges the gap between algorithmic solutions and computers
+* Selection
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-** Learn It
+** Learn It - Selection
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Lets recap:
-  - *Computational thinking* is the thought processes of understanding a problem and presenting its solution(s) in such a way that a computer or human can understand and a computer can effectively carry out.
 
-- Solving a problem involves:
-  - Understand the problem
-  - breakdown the problem into smaller problems - *decomposition*
-  - Focus on important details to reach a solution - *Abstraction*
-  - Look for similarities - *Pattern Recognition*
-  - Create a step by step instructions to solve the problem - *algorithm*
+- Last lesson we looked at how *sequencing* is used to put our solution to a problem in the correct order to solve it.
+- Today we are going to continue to use Flowol to use *selection* to decide what to do in certain situations.
+- A diamond box is used when a *decision* needs to be made, a decision is *selecting* what to do. 
+- This might include comparing the input states or comparing a count to a set limit. The outcome of the decision must be either yes or no.
 
--It is easier to spot patterns in pictures than in numbers. Lets use the following image as an example for us to learn the whole process of *problem solving*.
-- The problem for you is to create the same image using Python's turtle module.
-#+BEGIN_HTML
-<img src='./img/turtleFlower.png' width=40% height=40%>
-#+END_HTML
+[[./img/decisionblock.gif]]
 
-
-- Steps:
-  1. What smaller part of the problem can you identify? 
-  2. Are there any patterns? What are the patterns?
-  3. Not to concern yourself with how to pick the colours and and fill the shapes yet - just focus on the important part of the task for now.
-  4. Can you use any one of the three methods, psuedo-code, structured English and flowchart to describe your algorithms?
-
-- Hopefully you have identified the following:
-  1. The image is made up by solid circles
-  2. The blue circles are evenly distributed - a pattern
-  3. If you can make a circle using Python turtle module first, then ....
-** Try It - Decomposing: solving the smaller tasks first
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: try
-:END:
-
-- So, lets try to make one circle first.
-- From our term 1 turtle unit, we have learned that a turtle needs to move and turn at an angle in order to come back where the turtle started.
-- To draw a circle, in order to calculate how much to turn and move, we need to know the circle's radius.  
-- Lets store this radius in a variable called R. R can be any number depending on the size of the circle.
-- If we want the turtle to move in 360 steps, then each step should be the circle's circumference divided by 360 and the turning angle should be 360^o/360 = 1^o
-#+BEGIN_SRC 
-a circle's circumference is calculates as following:
-      2*R*3.14    where 3.14 is pi, R is the radius
-
-#+END_SRC
-- If we want the turtle to move in less steps, say in 180 steps, then each step should be the circle's circumference divided by 180 and the turning angle should be 360^o/180 = 2^o
-- If we can create a function called circle, then we can use it again later for all the circles in the image.
-- The following code in the trinket can draw one filled circle with radius 40. Can you try to create a circle function with the radius as a parameter so that function can be called to create circles with any radius?
-#+BEGIN_HTML
-<iframe src="https://trinket.io/embed/python/27eb6bd59b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-#+END_HTML
-** Badge It - Circle function
+** Badge It - Silver
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: silver
 :END:
-*** Learning Strand: Programming and Development
-- Use the code given above, create a circle function with the radius as a parameter so that function can be called to create circles with any radius.
-- You must test your solution by calling the function. Upload your solution. Your function should begin with :
-#+BEGIN_SRC python
-def circle(radius):
-    your code goes here!
 
-#+END_SRC
-** Badge It - Blossom
+- Your Silver badge task for this lesson is to follow the steps below to automate a home in Flowol.
+- Open the *Automatic Home* mimic in Flowol, it looks like this:
+[[./img/auto_home.png]]
+1. Make the fan switch on automatically if the temperature in the room goes above 23°C.
+2. Make the fire switch on automatically if the temperature in the room goes below 17°C.
+3. Make the inside lamp switch on automatically if the light level (Sun) falls below 20.
+4. Make the security light above the door turn on automatically if the light level (Sun) falls below 30 AND the security sensor is on.
+5. Make the garage door open and close when the red Open and Close buttons are pressed.
+[[./img/garage_extension.png]]
+
+- If you get stuck on this task [[./img/home_flow1.png][click here]] for some help, but only if you're really stuck!
+- When you have finished the task try it out by clicking the play button and interacting with your house to test that it works.
+- Then screenshot your flowcharts and upload your work to the *Silver* badge task on *Week 6* of *Problem Solving* on Bourne to Learn.
+- Before you move on make sure to save your Flowol work into your Computer Science/Year 8/Problem Solving folder as "Week 6 Selection Silver".
+
+
+* Using Sensors to Select
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It - Sensors
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Sensors are used to measure physical quantities such as temperature, light, pressure, sound, and humidity. They send signals to the processor, processor is short for central processing unit (CPU). 
+- For example:
+
+  - A security alarm system may have an infrared in communications, an infrared beam modulates (switches on/off) to a receiver that interprets the modulations as data sensor which sends a signal when the beam is broken.
+  - A heat sensitive sensor in the corner of a room may detect the presence of a person.
+  - Temperature sensors could be used to control the heating in a large building.
+  - Magnetic sensors are used to detect metal and can be placed in roads to monitor traffic flow.
+
+- Other physical quantities that can be transmitted directly to the computer's processor include:
+
+  - rainfall/water levels
+  - radiation level
+  - pH level
+  - oxygen level
+
+- In a smart home these sesnors could look like this:
+
+[[./img/smart_home.jpg]] 
+
+** Badge It - Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: gold
 :END:
-*** Learning Strand: Programming and Development
-- Work in pair, use psuedo-code, or structured English or flowchart to descibe the algorithm to produce the complete flower.
-- Implement your algorithm in Python by starting off your finished Silver code.
-- upload your algorithm and Python code.
+*** Learning Strand: Algorithms
+- Create a new Flowol file and choose the *Greenhouse* mimic.
+- Follow the steps below:
+  1. Create a flowchart to turn the Heater ON if the temperature is less than 10 and turn the Heater OFF if the temperature is greater than or equal 10.
+  2. Create a flowchart to turn the Light ON when light from the Sun is less than 20 and turn the Light OFF when light from the Sun is greater than 50.
+  3. Create a flowchart to turn the Sprinkler ON for 5 seconds if the low moisture sensor is ON.
 
-
+- Test out your flowcharts by clicking the play button and changing the temperature and Sun values and make sure they work correctly. 
+- Upload your completed *flowcharts* to www.bournetolearn.com, Week 6 Gold for Problem Solving.
 ** Badge It - Platinum
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: platinum
 :END:
-*** Learning Strand: Programming and Development
-- Take look at the following image.
-#+BEGIN_HTML
-<img src="./img/turtleCircles.png" width=200 height=200>
-#+END_HTML
-- Identify the pattern and finished the implementation by using the basic code below.
+*** Learning Strand: Algorithms
 
-#+BEGIN_HTML
+- You now need to create some subroutines to seperate your flowcharts into seperate tasks.
+- We've used subroutines before in Python, we made them by using the *def* keyword.
+- We also looked at them in the *Week 4 - Breaking it Down Platinum task*. Have a look there if you need help on creating a subroutine.
+- Your tasks are:
+  1. Create a subroutine flowchart to OPEN the Window.
+  2. Create a subroutine flowchart to CLOSE the Window.
+  3. Create a subroutine flowchart to OPEN the Window when the temperature is greater than 20 and CLOSE the Window when the temperature is less than 20.
 
-<iframe src="https://trinket.io/embed/python/d89a17c650" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-#+END_HTML
+- Test out your flowcharts by clicking the play button and changing the temperature and Sun values and make sure they work correctly. 
+- Upload your completed *flowcharts* to www.bournetolearn.com, Week 6 Platinum for Problem Solving.

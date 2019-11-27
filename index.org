@@ -38,7 +38,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[file:pages/6_Lesson.html][Week 6 - All Together Now]]
+* [[file:pages/6_Lesson.html][Week 6 - Selection]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
