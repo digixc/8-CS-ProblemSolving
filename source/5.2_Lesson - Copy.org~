@@ -178,60 +178,59 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- Try your *sequencing* skills by turning your table of steps from the traffic lights into a flowchart in PowerPoint.
-- Remem
-./img/silver_example_week5.png
+- Try your *sequencing* skills by turning your table of steps from the traffic lights into a flowchart in *PowerPoint*.
+- Use the image below to start you off, then complete your flowchart.
+[[./img/silver_example_week5.png]]
 
 ** Badge It - Silver
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: silver
 :END:
 *** Learning Strand: Algorithms
-- Finish decomposing the problem by finishing all steps required to reach a solution.
-- Create a flowchart using appropriate symbols for your steps.
-- Upload both your *steps* and *flowchart* to www.bournetolearn.com
-* Solving a real life problem with flowchart
+- Finish your sequence for the problem by finishing all steps required to reach a solution.
+- Create a flowchart in *Powerpoint* using appropriate symbols for your steps.
+- Upload your *flowchart* to www.bournetolearn.com, Week 5 Silver for Problem Solving.
+* Using Flowol for Flowcharts
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-** Learn It - the light house
+** Learn It - Double Traffic Lights
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Launch the application flowol, click on File->New and you should see something like the following:
+- Launch the application Flowol 4, click on File->New and you should see something like the following:
 [[./img/flowol-1.PNG]]
-- Select the =lighthouse mimic= by clicking on it
-- The scenario or mimic has one input:the Sun and three outputs: Lamp, Lights and Foghorn
-[[./img/flowol-lighthouse-1.PNG]]
-** Try It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: try
-:END:
-- flowol is simple to use once you know it
-- See if you can work out how to create a flowchart as shown below:
-[[./img/flowol-lighthouse-2.PNG]]
-- If you stuck, ask your teacher to show you
+- Select the =Bridge Lights mimic= by clicking on it
+- Follow this video to make a flowchart that controls one set of lights.
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TbFzXxYBpKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+- Your flowchart should look like this after following the video:
+[[./img/week5_halfwaytogold.PNG]]
 ** Badge It - Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: gold
 :END:
 *** Learning Strand: Algorithms
-- The above flowchart will make the three outputs flash on and off every two seconds
-- Your task is to create a flowhcart so that:
-  - when the Sun is down(off), all the three outputs will flash
-  - when the Sun is up (on), if the Lights are not on, the Foghorn should be on, and if the Lights are on, the Foghorn should be off.
-- Test your flowchart by clicking on the Sun to turn it on and off.
-- Screenshot your working flowchart and upload to BTL
+- You're halfway to the Gold badge, but at the moment only one set of lights work.
+- See if you can work out how to make the second set of lights work with the first by showing a red light when the first shows green, amber at the same time and green when the first shows red.
+- Your finished Gold badge work should make your lights look like this video, if they don't then try again.
 
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VgPqoJrUUCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
+- *HINT*: Click on one of your Output blocks, you can change both sets of lights using one block.
+- If you get stuck, remember to ask your teacher for help.
 ** Badge It - Platinum
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: platinum
 :END:
 *** Learning Strand: Algorithms
 
-- Now you are familar with how the software =flowol= works. 
-- The above mimic has all three outputs flash on and off. 
-- follow the steps shown in the image below to create a flash function:
-[[./img/flowol-define-function.png]]
-- Modify your flowchart from the Gold badge task to use this function. 
-- Test your flowchart as you have done with your Gold badge and upload the screenshot of your working flowchart to BTL.
+- Now you are familar with how =Flowol= works. 
+- For your Platinum badge you need to download the PDF file at the link below:
+[[./doc/Ferris.pdf][Right click here then Save Link As]] to save the file to your Computer Science folder.
+- Open the file in a program called Adobe Acrobat, right click the file in your Problem solving folder and select "Open With" then "Adobe Acrobat".
+- Follow the instructions and complete the 3 flowcharts it instructs you to complete.
+- Then screenshot your flowcharts and upload to the *Platinum badge for Week 5*.
