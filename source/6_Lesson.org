@@ -157,7 +157,6 @@
 - Then screenshot your flowcharts and upload your work to the *Silver* badge task on *Week 6* of *Problem Solving* on Bourne to Learn.
 - Before you move on make sure to save your Flowol work into your Computer Science/Year 8/Problem Solving folder as "Week 6 Selection Silver".
 
-
 * Using Sensors to Select
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -181,7 +180,7 @@
   - pH level
   - oxygen level
 
-- In a smart home these sesnors could look like this:
+- In a smart home these sensors could look like this:
 
 [[./img/smart_home.jpg]] 
 
