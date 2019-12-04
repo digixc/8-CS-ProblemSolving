@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sequence and Abstraction</title>
+<meta name="generator" content="Org mode" />
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/navbar.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Sequence and Abstraction</h1>
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/digixc/8-CS-ProblemSolving">Fork me on GitHub</a>
+    </div>
+  </div>
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="6_Lesson.html">Week6</a></li>
+
+      <li><a href="homework.html">Homework</a></li>
+
+    </ul>
+  </div>
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+<div id="outline-container-org78182ba" class="outline-2 objectives">
+<h2 id="org78182ba"><span class="section-number-2">1</span> Objectives</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org7890643" class="outline-3 learn">
+<h3 id="org7890643">Developing <b>Algorithms</b> learning strand, specifically:</h3>
+<div class="outline-text-3" id="text-org7890643">
+<ul class="org-ul">
+<li>develop problem solving skills by <b>decomposition</b></li>
+<li>learn how to represent <b>algorithms</b> using <b>flowchart</b></li>
+<li>learn how to represent <b>algorithms</b> using <b>pseudo-code</b></li>
+<li>Understand how <b>abstraction</b> can help solving complex problems</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd0215f1" class="outline-3 learn">
+<h3 id="orgd0215f1">Developing <b>Programming and Development</b> learning strand, specifically:</h3>
+<div class="outline-text-3" id="text-orgd0215f1">
+<ul class="org-ul">
+<li>implement solutions using <b>selection</b> and <b>repetition</b></li>
+<li>develop further understanding that programming bridges the gap between algorithmic solutions and computer</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org58d7d35" class="outline-2 activity">
+<h2 id="org58d7d35"><span class="section-number-2">2</span> Algorithms with Pseudo-code</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgbd88aea" class="outline-3 learn">
+<h3 id="orgbd88aea">Learn It</h3>
+<div class="outline-text-3" id="text-orgbd88aea">
+<ul class="org-ul">
+<li>Pseudo-code is similar to plain English but in a structured to describe the specific steps involved to solve a problem.</li>
+<li>Although pseudo-code does not have a fixed syntax, it should contain a set of instructions that are easy to follow by using appropriate indentations and nested indentations.</li>
+<li>The example below is the psuedoc-deo for an algorithm of guessing the number game before.</li>
+</ul>
+
+<pre class="example">
+generate a ramdom integer and store it in a variable A
+Ask user for an input and store in a variable B
+if B &gt; A:
+   output "Too high"
+if B&lt;A:
+   output "Too low"
+if B=A:
+   output "You guessed it"
+
+</pre>
+<ul class="org-ul">
+<li>Here is another version of the same algorithm written in different psuedo-code.</li>
+</ul>
+<pre class="example">
+A= a ramdom integer
+output "Please guess a number"
+B = user input
+if B &gt; A:
+   output "Too high"
+if B&lt;A:
+   output "Too low"
+if B=A:
+   output "You guessed it"
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org9cf03a2" class="outline-3 gold">
+<h3 id="org9cf03a2">Badge It - Gold</h3>
+<div class="outline-text-3" id="text-org9cf03a2">
+</div>
+<div id="outline-container-orge0200a8" class="outline-4">
+<h4 id="orge0200a8">Learning Strand: Algorithms</h4>
+<div class="outline-text-4" id="text-orge0200a8">
+<ul class="org-ul">
+<li>We all know the game of rock, paper, scissors.</li>
+<li>Try to decompose the game into smaller steps.</li>
+<li>Create an algorithm in psuedo-code for this game and upload.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org04015be" class="outline-2 activity">
+<h2 id="org04015be"><span class="section-number-2">3</span> Abstraction</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org86fc725" class="outline-3 learn">
+<h3 id="org86fc725">Learn It</h3>
+<div class="outline-text-3" id="text-org86fc725">
+<ul class="org-ul">
+<li>Abstraction is one of the four cornerstones of Computer Science. It involves filtering out – essentially, ignoring - the characteristics that we don't need in order to concentrate on those that we do. For example, in the guess the number game, we filtered out the detail on how the computer picks a random number.</li>
+<li>By leavinng out the unneeded information, we can focus on what is essential to solve the problem.</li>
+<li>It is part of computational thinking which allows us to look at a problem in ways which are easier to deal with.</li>
+<li>Watch the following video showing how abstraction was used to create improved versions of the London Underground Tube Map. Keep notes of what information was kept or removed from the London Tube Map.</li>
+</ul>
+<div class="HTML">
+<p>
+&lt;iframe width="560" height="315" src="<a href="https://www.youtube.com/embed/Bg3pfUqdLp4">https://www.youtube.com/embed/Bg3pfUqdLp4</a>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+</p>
+
+</div>
+</div>
+</div>
+<div id="outline-container-orga3da32e" class="outline-3 literacy">
+<h3 id="orga3da32e">Badge It - Literacy</h3>
+<div class="outline-text-3" id="text-orga3da32e">
+</div>
+<div id="outline-container-org4b90413" class="outline-4">
+<h4 id="org4b90413">Learning Strand: Literacy</h4>
+<div class="outline-text-4" id="text-org4b90413">
+<ul class="org-ul">
+<li>Upload your notes of what information was kept or removed from the London Tube Map.</li>
+<li>Using the software of your choice to create a User Guide on how to decompose a problem, including an example.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgafcd704" class="outline-3 platinum">
+<h3 id="orgafcd704">Badge It - platinum</h3>
+<div class="outline-text-3" id="text-orgafcd704">
+</div>
+<div id="outline-container-orgeb6ffa1" class="outline-4">
+<h4 id="orgeb6ffa1">Learning Strand: Programming and Development</h4>
+<div class="outline-text-4" id="text-orgeb6ffa1">
+<ol class="org-ol">
+<li>We have used flowchart to present a solution on checking if a number is even or odd.</li>
+<li>We also used psuedo-code to present a solution on guessing the number game.</li>
+<li>To gain this badge, you need to implement a solution using Python to <b>one</b> of the two problems.</li>
+</ol>
+<p>
+<b>hints</b>:
+</p>
+<ul class="org-ul">
+<li>for problem 1, you need to know <a href="https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/1_Part.html#sec-1-7">how to tell if a number is even or odd</a></li>
+<li>for problem 2. you need to know <a href="https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/1_Part.html#sec-1-6">how to use a random module in Python to generate random number.</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"></p>
+</div>
+</body>
+</html>

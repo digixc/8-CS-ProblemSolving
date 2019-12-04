@@ -8,7 +8,7 @@
 #+TITLE: Break Down a Problem
 #+AUTHOR: Xiaohui Ellis
 
-#+BEGIN_HTML
+#+BEGIN_EXPORt html
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
       <a href="https://github.com/digixc/8-CS-ProblemSolving">Fork me on GitHub</a>
@@ -41,7 +41,7 @@
 <p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
 <p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
 </div>
-#+END_HTML
+#+END_EXPORT
 * COMMENT Use as a template
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -155,9 +155,10 @@ will output it is an even or an odd number.
 - A flowchart is a type of diagram that represents an algorithm, workflow or process, showing the steps as boxes of various kinds, and their order by connecting them with arrows.
 - Each shape represent some steps in the algorithm:
 [[./img/flowChartShapes.png]]
-- The following is a simple example of using flowchart to describe the steps to a simple problem of determing if an user's input numbers are odd or not.
-
-[[./img/flowchart-odd-number.svg]]
+- The following is a simple example of using flowchart to describe the steps to a simple problem of determing if an user's input numbers are odd or not. 
+#+BEGIN_EXPORT html
+<img src="./img/even-or-odd.png" width=400 height=400>
+#+END_EXPORT
 - The above problem has been decomposed into three parts:
   1. a user input a number
   2. determine if the number is even or odd
@@ -184,83 +185,50 @@ declared a winner. If the user guessed incorrectly, the computer will
 - Finish decomposing the problem by finishing all steps required to reach a solution.
 - Create a flowchart using appropriate symbols for your steps.
 - Upload both your *steps* and *flowchart* to www.bournetolearn.com
-* Algorithms with Pseudo-code
+* Solving a real life problem with flowchart
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-** Learn It
+** Learn It - the light house
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Pseudo-code is similar to plain English but in a structured to describe the specific steps involved to solve a problem.
-- Although pseudo-code does not have a fixed syntax, it should contain a set of instructions that are easy to follow by using appropriate indentations and nested indentations.  
-- The example below is the psuedoc-deo for an algorithm of guessing the number game before.
-
-#+BEGIN_SRC 
-generate a ramdom integer and store it in a variable A
-Ask user for an input and store in a variable B
-if B > A:
-   output "Too high"
-if B<A:
-   output "Too low"
-if B=A:
-   output "You guessed it"
-
-#+END_SRC
-- Here is another version of the same algorithm written in different psuedo-code. 
-#+BEGIN_SRC 
-A= a ramdom integer
-output "Please guess a number"
-B = user input
-if B > A:
-   output "Too high"
-if B<A:
-   output "Too low"
-if B=A:
-   output "You guessed it"
-#+END_SRC
-
+- Launch the application flowol, click on File->New and you should see something like the following:
+[[./img/flowol-1.PNG]]
+- Select the =lighthouse mimic= by clicking on it
+- The scenario or mimic has one input:the Sun and three outputs: Lamp, Lights and Foghorn
+[[./img/flowol-lighthouse-1.PNG]]
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- flowol is simple to use once you know it
+- See if you can work out how to create a flowchart as shown below:
+[[./img/flowol-lighthouse-2.PNG]]
+- If you stuck, ask your teacher to show you
 ** Badge It - Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: gold
 :END:
 *** Learning Strand: Algorithms
-- We all know the game of rock, paper, scissors.
-- Try to decompose the game into smaller steps.
-- Create an algorithm in psuedo-code for this game and upload.
+- The above flowchart will make the three outputs flash on and off every two seconds
+- Your task is to create a flowhcart so that:
+  - when the Sun is down(off), all the three outputs will flash
+  - when the Sun is up (on), all the outputs should be off.
+- Test your flowchart by clicking on the Sun to turn it on and off.
+- Screenshot your working flowchart and upload to BTL
 
-
-* Abstraction
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
-** Learn It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-- Abstraction is one of the four cornerstones of Computer Science. It involves filtering out – essentially, ignoring - the characteristics that we don't need in order to concentrate on those that we do. For example, in the guess the number game, we filtered out the detail on how the computer picks a random number.
-- By leavinng out the unneeded information, we can focus on what is essential to solve the problem.
-- It is part of computational thinking which allows us to look at a problem in ways which are easier to deal with.
-- Watch the following video showing how abstraction was used to create improved versions of the London Underground Tube Map. Keep notes of what information was kept or removed from the London Tube Map.
-#+BEGIN_HTML
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Bg3pfUqdLp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-#+END_HTML
-** Badge It - Literacy
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: literacy
-:END:
-*** Learning Strand: Literacy
-- Upload your notes of what information was kept or removed from the London Tube Map.
-- Using the software of your choice to create a User Guide on how to decompose a problem, including an example.
-
-** Badge It - platinum
+** Badge It - Platinum
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: platinum
 :END:
-*** Learning Strand: Programming and Development
-1. We have used flowchart to present a solution on checking if a number is even or odd.
-2. We also used psuedo-code to present a solution on guessing the number game.
-- To gain this badge, you need to implement a solution using Python to *one* of the two problems.
-*hints*:
-- for problem 1, you need to know [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/1_Part.html#sec-1-7][how to tell if a number is even or odd]]
-- for problem 2. you need to know [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/1_Part.html#sec-1-6][how to use a random module in Python to generate random number.]]
+*** Learning Strand: Algorithms
+
+- Now you are familar with how the software =flowol= works. 
+- The above mimic has all three outputs flash on and off. 
+- follow the steps shown in the image below to create a flash function:
+[[./img/flowol-define-function.png]]
+- Once you have created a function, the side menu will now have *Sub* block for you to use the functions you have created.
+[[./img/flowol-function.png]]
+- Modify your flowchart from the Gold badge task to use this function. 
+- Test your flowchart as you have done with your Gold badge and upload the screenshot of your working flowchart to BTL.
