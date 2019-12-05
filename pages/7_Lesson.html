@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Iteration and Variables</title>
+<meta name="generator" content="Org mode" />
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/navbar.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Iteration and Variables</h1>
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/digixc/8-CS-ProblemSolving">Fork me on GitHub</a>
+    </div>
+  </div>
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="6_Lesson.html">Week6</a></li>
+      <li><a href="7_Lesson.html">Week7</a></li>
+      <li><a href="homework.html">Homework</a></li>
+
+    </ul>
+  </div>
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+<div id="outline-container-orgc366dbb" class="outline-2 objectives">
+<h2 id="orgc366dbb"><span class="section-number-2">1</span> Objectives</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgebf7cdb" class="outline-3 learn">
+<h3 id="orgebf7cdb">Developing <b>Algorithms</b> learning strand, specifically:</h3>
+<div class="outline-text-3" id="text-orgebf7cdb">
+<ul class="org-ul">
+<li>learn how to represent <b>algorithms</b> using <b>flowcharts</b></li>
+<li>Understand how <b>alogrithm design</b> can help solving complex problems</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb64d014" class="outline-3 learn">
+<h3 id="orgb64d014">Developing <b>Programming and Development</b> learning strand, specifically:</h3>
+<div class="outline-text-3" id="text-orgb64d014">
+<ul class="org-ul">
+<li>implement solutions using <b>iteration</b> and <b>variables</b></li>
+<li>develop further understanding that programming bridges the gap between algorithmic solutions and computers</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org27e9c07" class="outline-2 activity">
+<h2 id="org27e9c07"><span class="section-number-2">2</span> Iteration</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org0ee772b" class="outline-3 learn">
+<h3 id="org0ee772b">Learn It - Iteration</h3>
+<div class="outline-text-3" id="text-org0ee772b">
+<ul class="org-ul">
+<li>Last lesson we looked at how <b>selection</b> is used to decide what do do based on the state or value of certain items.</li>
+<li>Today we are going to continue to use Flowol to use <b>iteration</b> to do tasks over and over again.</li>
+<li>To do this with flowcharts and Flowol we use the lines and arrows to loop back to a previous flowchart shape.</li>
+<li>This allows us to repeat something for an unlimited amount of times or just for a set amount.</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./img/loopflow.png" alt="loopflow.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>In the image above you can see that after the Delay 2 the line and arrow go back to Is Sun Off. This is a loop.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6a2926f" class="outline-3 silver">
+<h3 id="org6a2926f">Badge It - Silver</h3>
+<div class="outline-text-3" id="text-org6a2926f">
+<ul class="org-ul">
+<li>Open the 'Big Wheel' mimic from the mimic menu in Flowol.</li>
+<li>Explore what the mimic can do by clicking on the inputs, outputs and motors on the Status Panel.</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./img/big_wheel_mimic.png" alt="big_wheel_mimic.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>Take some time to understand the four different inputs.</li>
+<li>Button 1 and Button 2 are normal inputs but, when the wheel is rotating, you may notice that the Steps input flashes on each time a seat passes over the steps. Also, if you click on the Gate with the left mouse button you will find that the Gate input comes on when the gate is shut.</li>
+<li>The Steps and Gate inputs are called virtual inputs. They cannot be changed by directly clicking on the mimic, but are changed by features within the mimic itself.</li>
+
+<li>To attract the crowd, use the <b>Button 1</b> input to control the lighting effects on the wheel's frame. This might be a simple on/off routine but flashing sequences are more exciting. <b>Use subroutines.</b></li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/subroutines.png" alt="subroutines.png" />
+</p>
+</div>
+<ol class="org-ol">
+<li>Use the <b>Button 2</b> input to control the simple Go/Stop movement of the wheel. You could perhaps make the wheel speedup and slowdown in stages by changing the motor power.</li>
+</ol>
+
+<div class="figure">
+<p><img src="./img/wheel_task_2.png" alt="wheel_task_2.png" />
+</p>
+</div>
+<ol class="org-ol">
+<li>Modify task 2 to include the safety feature of the gate so that the gate must be closed before the wheel will start (i.e. both Button 2 and Gate are on). The wheel should stop if either Button 2 is turned off, or the Gate is opened (i.e. if either Button 2 or Gate are off).</li>
+
+<li>When you have finished the task try it out by clicking the play button and interacting with the wheel to test that it works.</li>
+<li>Then screenshot your flowcharts and upload your work to the <b>Silver</b> badge task on <b>Week 7</b> of <b>Problem Solving</b> on Bourne to Learn.</li>
+<li>Before you move on make sure to save your Flowol work into your Computer Science/Year 8/Problem Solving folder as "Week 7 Iteration Silver".</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org942b585" class="outline-2 activity">
+<h2 id="org942b585"><span class="section-number-2">3</span> Variables</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org0afffd6" class="outline-3 learn">
+<h3 id="org0afffd6">Learn It - Variables</h3>
+<div class="outline-text-3" id="text-org0afffd6">
+<ul class="org-ul">
+<li>As well as sequencing, selection and iteration another important concept we need to know in programming is about <b>variables</b>.</li>
+<li>Computer programs use variables to store information, which we can change later in the program.</li>
+<li>Variables could be used to store the score in a game, the number of cars in a car park or the cost of items on a till. They work in a similar way to algebra, where a letter in your code can stand for a number.</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./img/variables.png" alt="variables.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>In the image above you can see how we make a variable, change it and use a decision block to check it.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd4e4cb3" class="outline-3 gold">
+<h3 id="orgd4e4cb3">Badge It - Gold</h3>
+<div class="outline-text-3" id="text-orgd4e4cb3">
+</div>
+<div id="outline-container-orga991e54" class="outline-4">
+<h4 id="orga991e54">Learning Strand: Algorithms</h4>
+<div class="outline-text-4" id="text-orga991e54">
+<ul class="org-ul">
+<li>In the same "Big Wheel" mimic file you were using for Silver we are now going to add variables.</li>
+<li>Follow the steps below:
+<ol class="org-ol">
+<li>Use variable <b>x</b> to count how many times the ride is used. This could be done either by adding the increment <b>Let</b> instruction to the existing flowchart from the Silver task, or by creating a separate flowchart, as shown here.</li>
+</ol></li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/flowol_variables.png" alt="flowol_variables.png" />
+</p>
+</div>
+<ol class="org-ol">
+<li>Construct this counting program to increase the variable y each time a seat passes the steps, i.e. each time the virtual input goes off and on.</li>
+<li>Since there are 7 seats, each rotation of the wheel should increase the variable y by 7.</li>
+<li>Now modify your program by introducing a decision symbol, to stop the wheel automatically after it has rotated 3 times.</li>
+</ol>
+
+<div class="figure">
+<p><img src="./img/week7task5.png" alt="week7task5.png" />
+</p>
+</div>
+<ol class="org-ol">
+<li>Now that you have learned how to use the Steps input, create a subroutine which rotates the wheel and stops briefly at each of the seven seats for passengers to get on or off.</li>
+</ol>
+<p>
+Call this subroutine twice; once at the beginning to load the wheel with passengers, and then at the end to unload.
+</p>
+
+<ul class="org-ul">
+<li>Test out your flowcharts by clicking the play button and using the buttons to see that your flowcharts work.</li>
+<li>Upload your completed <b>flowcharts</b> to www.bournetolearn.com, Week 7 Gold for Problem Solving.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8449b04" class="outline-3 platinum">
+<h3 id="org8449b04">Badge It - Platinum</h3>
+<div class="outline-text-3" id="text-org8449b04">
+</div>
+<div id="outline-container-org3847d85" class="outline-4">
+<h4 id="org3847d85">Learning Strand: Algorithms</h4>
+<div class="outline-text-4" id="text-org3847d85">
+<p>
+<b>Changing the Speed of a Motor with a Variable</b>
+</p>
+
+<ul class="org-ul">
+<li>To keep passengers safe the wheel should gradually speed up and slow down.</li>
+<li>While it is possible to change the speed with a sequence of Output symbols with speeds of 10%, 20%, 30% etc. it is much more compact and reusable to employ a variable.</li>
+<li>Create the new variable s and use a speed of s% in the output symbols in the subroutines.</li>
+
+<li>When running the program, observe the Wheel motor in the status panel. The size of the bar indicates the speed of the motor.</li>
+
+<li>If you need help then <a href="./img/flowol_variables_let_s.png">click here</a> for a hint.</li>
+
+<li>Test out your flowcharts by clicking the play button try to speed up and slow down your big wheel.</li>
+<li>Upload your completed <b>flowcharts</b> to www.bournetolearn.com, Week 7 Platinum for Problem Solving.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
