@@ -1,19 +1,17 @@
- #+STARTUP:indent
+#+STARTUP:indent
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 #+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
-#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil  
-#+TITLE: How A Computer Works
-#+AUTHOR: Marc Scott
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil 
 
-#+BEGIN_HTML
-<div class=ribbon>
-<a href="https://github.com/MarcScott/8-CS-Computers">Fork me on GitHub</a>
-</div>
-#+END_HTML
-#+BEGIN_HTML
+#+TITLE: Iteration and Variables
+#+AUTHOR: James Brown
+
+#+BEGIN_EXPORt html
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
-      <a href="https://github.com/MarcScott/8-CS-AI">Fork me on GitHub</a>
+      <a href="https://github.com/digixc/8-CS-ProblemSolving">Fork me on GitHub</a>
     </div>
   </div>
 <div id="stickyribbon">
@@ -25,11 +23,25 @@
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
       <li><a href="7_Lesson.html">Week7</a></li>
-      <li><a href="assessment.html">Assessment</a></li>
+      <li><a href="homework.html">Homework</a></li>
 
     </ul>
   </div>
-#+END_HTML
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+#+END_EXPORT
 * COMMENT Use as a template
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -93,118 +105,114 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
-
-* What is a computer?
+* Objectives
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: objectives
 :END:
-** Learn It
+** Developing *Algorithms* learning strand, specifically:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Data is a collection of facts, such as values or measurements.
-- It can be numbers, words, measurements, observations or even just descriptions of things
-- A computer is an electronic device that can store, retrieve, and process data.
-** Research It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: research
-:END:
-- Computers are composed of Hardware and Software.
-- Use the web to find definitions of Hardware and Software and examples of each. Keep a note of what you find out. You're going to need to write it up.
-** Document It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: document
-:END:
-- You're going to write your project up using Markdown.
-- Like HTML, Markdown is a markup language (Confusing names are common in computing)
-- You can write in Markdown and then use a parser to convert it to other formats such as HTML, PDF or even docx.
-* Using Markdown
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:      
-** Learn It
++ learn how to represent *algorithms* using *flowcharts*
++ Understand how *alogrithm design* can help solving complex problems
+** Developing *Programming and Development* learning strand, specifically:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Markdown has it's own syntax - /an arrangement of words and symbols specific to a language./
-- The best way to learn Markdown is to write some.
-- Use a text editor to create a new document and call it Markdown-Cheatsheet.md
-- Now let's write a line of Markdown.
-#+BEGIN_SRC markdown
-# This is a level 1 heading
-#+END_SRC
-- Now save the file.
-- We'll need to use a parser to turn our markdown into something else. Your teacher will show you how to do this.
-** Learn It
++ implement solutions using *iteration* and *variables*
++ develop further understanding that programming bridges the gap between algorithmic solutions and computers
+* Iteration
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It - Iteration
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- So that's level 1 headings sorted. Let's add some more Markdown to our document. You can copy and paste this if you like.
-#+BEGIN_SRC markdown
-## This is a level 2 heading
-### Obviously this is level 3
 
-Unordered lists are cool
+- Last lesson we looked at how *selection* is used to decide what do do based on the state or value of certain items. 
+- Today we are going to continue to use Flowol to use *iteration* to do tasks over and over again.
+- To do this with flowcharts and Flowol we use the lines and arrows to loop back to a previous flowchart shape.
+- This allows us to repeat something for an unlimited amount of times or just for a set amount.
 
-+ Here's the first bullet
-+ And the second
-+ Okay, let's have three
+[[./img/loopflow.png]]
 
-As are ordered lists
+- In the image above you can see that after the Delay 2 the line and arrow go back to Is Sun Off. This is a loop.
 
-1. A numbered list would be good
-1. It doesn't matter what numbers you used.
-1. In Markdown the sequence will climb by one
-9. Even if you add weird numbers
-6. Like this
 
-We can add horizontal rules like this 
-
-- - -
-
-And we can get code blocks by using tabs (or 4 spaces)
-
-    var i = 10;
-    console.log('Some statement')
-
-Sometimes it's nice to get a *little* emphasis, though sometimes you want a **lot**
-
-Sometimes we might want a link
-
-[Daring Fireball Markdown Syntax](http://daringfireball.net/projects/markdown/syntax)
-
-Sometimes we might want an image
-
-![Daring Fireball Logo](http://daringfireball.net/graphics/logos/)
-
-#+END_SRC
-- Send the document through your parser and have a look at the result. Keep hold of this document as it'll be a good reference guid for you in the future.
-* Starting your projects
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:      
-- [[file:doc/How-Computers-Work.md][Download this file]]
-- You can use this as a guide for your write up.
-- Open it up in a text editor and have a quick scan through
-* Assessment
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
 ** Badge It - Silver
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: badge
+:HTML_CONTAINER_CLASS: silver
 :END:
-- Edit the top of the document to show the correct author and date
-- Add a description for Hardware and Software in the appropriate places
-- Run the document through your parser and show the output to your teacher.
+
+- Open the 'Big Wheel' mimic from the mimic menu in Flowol.
+- Explore what the mimic can do by clicking on the inputs, outputs and motors on the Status Panel.
+
+[[./img/big_wheel_mimic.png]]
+
+- Take some time to understand the four different inputs.
+- Button 1 and Button 2 are normal inputs but, when the wheel is rotating, you may notice that the Steps input flashes on each time a seat passes over the steps. Also, if you click on the Gate with the left mouse button you will find that the Gate input comes on when the gate is shut.
+- The Steps and Gate inputs are called virtual inputs. They cannot be changed by directly clicking on the mimic, but are changed by features within the mimic itself.
+
+1. To attract the crowd, use the *Button 1* input to control the lighting effects on the wheel's frame. This might be a simple on/off routine but flashing sequences are more exciting. *Use subroutines.*
+[[./img/subroutines.png]]
+2. Use the *Button 2* input to control the simple Go/Stop movement of the wheel. You could perhaps make the wheel speedup and slowdown in stages by changing the motor power.
+[[./img/wheel_task_2.png]]
+3. Modify task 2 to include the safety feature of the gate so that the gate must be closed before the wheel will start (i.e. both Button 2 and Gate are on). The wheel should stop if either Button 2 is turned off, or the Gate is opened (i.e. if either Button 2 or Gate are off).
+
+- When you have finished the task try it out by clicking the play button and interacting with the wheel to test that it works.
+- Then screenshot your flowcharts and upload your work to the *Silver* badge task on *Week 7* of *Problem Solving* on Bourne to Learn.
+- Before you move on make sure to save your Flowol work into your Computer Science/Year 8/Problem Solving folder as "Week 7 Iteration Silver".
+
+* Variables
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It - Variables
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+- As well as sequencing, selection and iteration another important concept we need to know in programming is about *variables*.
+- Computer programs use variables to store information, which we can change later in the program.
+- Variables could be used to store the score in a game, the number of cars in a car park or the cost of items on a till. They work in a similar way to algebra, where a letter in your code can stand for a number.
+
+[[./img/variables.png]]
+
+- In the image above you can see how we make a variable, change it and use a decision block to check it.
+
 ** Badge It - Gold
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: badge
+:HTML_CONTAINER_CLASS: gold
 :END:
-- Include links and images into your descriptions for Hardware and Software, as well as ensuring your descriptions include examples.
+*** Learning Strand: Algorithms
+- In the same "Big Wheel" mimic file you were using for Silver we are now going to add variables.
+- Follow the steps below:
+  1. Use variable *x* to count how many times the ride is used. This could be done either by adding the increment *Let* instruction to the existing flowchart from the Silver task, or by creating a separate flowchart, as shown here.
+[[./img/flowol_variables.png]]
+  2. Construct this counting program to increase the variable y each time a seat passes the steps, i.e. each time the virtual input goes off and on. 
+  - Since there are 7 seats, each rotation of the wheel should increase the variable y by 7.
+  - Now modify your program by introducing a decision symbol, to stop the wheel automatically after it has rotated 3 times.
+[[./img/week7task5.png]]
+  3. Now that you have learned how to use the Steps input, create a subroutine which rotates the wheel and stops briefly at each of the seven seats for passengers to get on or off.
+  Call this subroutine twice; once at the beginning to load the wheel with passengers, and then at the end to unload.
+
+- Test out your flowcharts by clicking the play button and using the buttons to see that your flowcharts work.
+- Upload your completed *flowcharts* to www.bournetolearn.com, Week 7 Gold for Problem Solving.
 ** Badge It - Platinum
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: badge
+:HTML_CONTAINER_CLASS: platinum
 :END:
-- Wow your teacher with your thorough understanding of the varieties of hardware and software, and show a deep understanding of what the two things are.
+*** Learning Strand: Algorithms
+*Changing the Speed of a Motor with a Variable*
 
+- To keep passengers safe the wheel should gradually speed up and slow down.
+- While it is possible to change the speed with a sequence of Output symbols with speeds of 10%, 20%, 30% etc. it is much more compact and reusable to employ a variable.
+- Create the new variable s and use a speed of s% in the output symbols in the subroutines.
+
+- When running the program, observe the Wheel motor in the status panel. The size of the bar indicates the speed of the motor.
+
+- If you need help then [[./img/flowol_variables_let_s.png][click here]] for a hint.
+
+- Test out your flowcharts by clicking the play button try to speed up and slow down your big wheel. 
+- Upload your completed *flowcharts* to www.bournetolearn.com, Week 7 Platinum for Problem Solving.
