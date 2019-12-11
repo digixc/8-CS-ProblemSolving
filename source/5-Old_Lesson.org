@@ -1,0 +1,269 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil
+
+#+TITLE: Problem Solving
+#+AUTHOR: X Ellis
+
+#+BEGIN_EXPORt html
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/digixc/8-CS-ProblemSolving">Fork me on GitHub</a>
+    </div>
+  </div>
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="6_Lesson.html">Week6</a></li>
+      <li><a href="7_Lesson.html">Week7</a></li>
+      <li><a href="homework.html">Homework</a></li>
+
+    </ul>
+  </div>
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+#+END_EXPORT
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing *Algorithms* learning strand, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- further develop *pattern recognition* problem solving skills
+- develop *critical* and *logical* thinking skills
+
+* Computational Thinking
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It – An Excellent Life Skill
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- In the last lesson, we looked at the principles of computational thinking: decomposition and abstraction
+- Today we will be looking at pattern recognition and applying this alongside decomposition and abstraction to solve problems.
+- Problem solving is an excellent life skill and can help you in any career choice that you make.
+- The best minds in the world are known for their excellent problem solving ability and these have often changed the world as we know it.
+
+** Learn It – Pattern Recognition
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- With many problems, there is often a give-away in the details, some piece of information which repeats or changes in a specific way.
+- For example, in Mathematics you often see number sequences where there is a clear pattern to the changes.
+
+** Try It – Pattern Recognition
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Look at the following 3 number sequences, can you identify the pattern in how they change? Make a note of each!
+
+#+BEGIN_SRC 
+Pattern 1:
+     1, 2, 4, 8, 16, 32, 64, 128, 256
+
+Pattern 2:
+     0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+Pattern 3:
+     2, 3, 5, 7, 11, 13, 17, 19, 23, 29
+
+
+#+END_SRC
+
+
+
+- How did you work out the patterns? 
+- Was one of them more difficult than the others? 
+- When looking for patterns, some of them we can decipher by using *decomposition* (looking at a small subset of numbers) to identify the rules used.
+- Others, however, we need to use *abstraction* to focus on the numbers themselves to identify a common theme.
+
+* Approaching a Problem
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It – An Excellent Life Skill
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+- How we approach a problem makes a huge difference, we need to weigh up the best approach – often this means looking at a large amount of data and picking a particular method to begin.
+- Examples include Divide and Conquer or focusing on key details using Abstraction
+- Here are some general approaches to a problem: 
+  - Understand the problem (Algorithm)
+  - Break it down into smaller problems (Decomposition)
+  - Focus on important details (Abstraction)
+  - Look for similarities (Pattern Recognition)
+  - Evaluate your method
+
+* Problem Solving Examples
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Try It – Problem 1
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Watch the following video, pause it before the solution and answer the questions below and make a note:
+
+  - How would you approach this task?
+  - What is the most important detail in this problem?
+  - What details can help you fill in other pieces of the puzzle?
+
+#+BEGIN_html
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1rDVz_Fb6HQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+#+END_html
+** Try It – Problem 2
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Assassin is a popular game on college campuses. The game consists of several players trying to eliminate the others by means of squirting them with water pistols in order to be the last survivor. Once hit, the player is out of the game.
+- Game play is fair play at all times and all locations, and tends to last several days depending on the number of participants and their stealth. 
+- At Bourne Grammar School, 5 teachers participated in a game that only lasted four days. Can you determine each teachers’ name, their team color, their assassin alias, how they were eliminated, and their extra-curricular activity?
+
+| Names:   | Mr Delport, Miss Potts, Mrs Ellis, Mr Fone, Mr Dougall                                                                      |
+| Colours: | Red, Green, Blue, Purple, Black                                                                                             |
+| Alias:   | Captain Dawn, Night Stalker, Dark Elf, McStealth, Billy                                                                     |
+| Capture: | Caught at weekly meeting, Caught helping friend with car trouble, Ambushed during sleep, Caught on the way to class, Winner |
+| Club:    | Long Distance Running, Weight Lifting, Flower Arrangement, Ice Skating, Model Trains                                        |
+
+- *MONDAY*: Mr Delport, the girl named Captain Dawn, and the person in purple avoided any action that day. The teacher in charge of Model Trains was able to easily catch Mr Dougall because she already had a meeting with him that day. Since it was a weekly engagement, he didn't suspect a thing. Goodbye red player.
+
+- *TUESDAY*: Everyone tried to get in on the action today. The girl masquerading as the Dark Elf (who was wearing either black or red) and the Ice Skater lived to see another day. The purple player was able to catch the obliging yet naive green player by calling her and pretending he had car trouble.
+
+- *WEDNESDAY*: The weight lifter (who was still "alive") was surprised to hear that the Model Train club owner, who wasn't Miss Potts the flower arranger, ambushed Night Stalker as he slept in his dorm.
+
+- *THURSDAY*: The black player was declared the victor after luckily spotting "Billy" on his way to “Do you even lift?”, a class required for his club.
+
+
+* Assessement
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+
+** Badge It – Silver
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: silver
+:END:
+*** Learning Strand: Algorithms
+- Upload your solution to the Assassin Logic Puzzle from above – you should have included all details about each player involved and not just who the winner was.
+- Hint: A table may be a good way to figure out the solution and be a nice way to display this to your teacher
+** Badge It – Gold
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: gold
+:END:
+*** Learning Strand: Algorithms
+- Visit[[http://similarminds.com/intdoor.html][ this site]]
+- This will test your pattern recognition skills! There are 15 patterns to test. 
+- Score at least 8/15 and upload a screenshot as proof.
+
+** Badge It – Platinum
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: platinum
+:END:
+*** Learning Strand: Algorithms
+- Push your problem solving skills to the limit! 
+- Try the following game.
+  - It is in Chinese! Your job is to do the following:
+  - Write down the rules
+  - Come up with a solution
+  - Upload this to BourneToLearn.com with a screenshot of victory!
+  - To start press the button in the game looking like this:
+  
+
+#+BEGIN_HTML
+<img src='./img/chineseStart.png' width=80 height=80>
+ <object width="900" height="700" data="./img/puzzle.swf"></object> 
+#+END_HTML
+- Here are the rules for the game:
+  - At most two people can be on the raft at once.
+  - You will need at least one adult to operate the raft.
+  - The policeman can’t leave the criminal with other people.
+  - You can’t leave father alone with any of the girls as well as mother with any of the boys.
