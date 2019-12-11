@@ -6,7 +6,8 @@
 #+OPTIONS: f:nil author:nil num:nil creator:nil timestamp:nil toc:nil html-style:nil
 #+TITLE: Problem Solving
 #+AUTHOR: Xiaohui Ellis
-#+BEGIN_HTML
+
+#+BEGIN_EXPort html
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
       <a href="https://github.com/digixc/7-CS-webDesign.git">Fork me on GitHub</a>
@@ -21,7 +22,7 @@
       <li><a href="4_Lesson.html">Week4</a></li>
       <li><a href="5_Lesson.html">Week5</a></li>
       <li><a href="6_Lesson.html">Week6</a></li>
-
+      <li><a href="7_Lesson.html">Week7</a></li>
     </ul>
   </div>
 
@@ -41,7 +42,7 @@
 <p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
 </div>
 
-#+END_HTML
+#+END_EXPORT
 * COMMENT Use as a template
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity

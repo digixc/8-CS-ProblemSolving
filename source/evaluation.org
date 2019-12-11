@@ -6,9 +6,9 @@
 #+HTML_HEAD_EXTRA: <script src="js/strikeThrough.js" type="text/javascript"></script>
 #+OPTIONS: f:nil author:AUTHOR num:1 creator:AUTHOR timestamp:nil toc:nil html-style:nil html-postamble:nil
 #+TITLE: End of the unit evaluation
-#+AUTHOR: X Ellis
+#+AUTHOR: James Brown
 
-#+BEGIN_HTML
+#+BEGIN_EXPORt html
 <!--
 <div id="underlay" onclick="underlayoff()">
 </div>
@@ -26,7 +26,7 @@
 </div>
 -->
 
-#+END_HTML
+#+END_EXPORT
 
 * COMMENT Use as a template
 :PROPERTIES:
@@ -101,7 +101,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- [[./doc/ProblemSolving-EndofUnitEvaluation.docx][ Right click here]] then *Save Link As* to save this evaluation template into your homedrive.
+- [[./doc/Problem_Solving-EndofUnitEvaluation.docx][Right Click here]] then *Save Link As* to save this evaluation template into your homedrive.
 - Open the downloaded template in Word.
 - Follow the instructions on the template to finish your self evaluation.
   - Under each heading/learning strand, evaluate the following:
