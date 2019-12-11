@@ -154,11 +154,12 @@
 - Button 1 and Button 2 are normal inputs but, when the wheel is rotating, you may notice that the Steps input flashes on each time a seat passes over the steps. Also, if you click on the Gate with the left mouse button you will find that the Gate input comes on when the gate is shut.
 - The Steps and Gate inputs are called virtual inputs. They cannot be changed by directly clicking on the mimic, but are changed by features within the mimic itself.
 
-1. To attract the crowd, use the *Button 1* input to control the lighting effects on the wheel's frame. This might be a simple on/off routine but flashing sequences are more exciting. *Use subroutines.*
+*Task 1* - To attract the crowd, use the *Button 1* input to control the lighting effects on the wheel's frame. This might be a simple on/off routine but flashing sequences are more exciting. *Use subroutines.*
+- Use the image below as a base for your task, you will need to change the input and output names.
 [[./img/subroutines.png]]
-2. Use the *Button 2* input to control the simple Go/Stop movement of the wheel. You could perhaps make the wheel speedup and slowdown in stages by changing the motor power.
+*Task 2* - Use the *Button 2* input to control the simple Go/Stop movement of the wheel. You could perhaps make the wheel speedup and slowdown in stages by changing the motor power.
 [[./img/wheel_task_2.png]]
-3. Modify task 2 to include the safety feature of the gate so that the gate must be closed before the wheel will start (i.e. both Button 2 and Gate are on). The wheel should stop if either Button 2 is turned off, or the Gate is opened (i.e. if either Button 2 or Gate are off).
+*Task 3* - Modify task 2 to include the safety feature of the gate so that the gate must be closed before the wheel will start (i.e. both Button 2 and Gate are on). The wheel should stop if either Button 2 is turned off, or the Gate is opened (i.e. if either Button 2 or Gate are off).
 
 - When you have finished the task try it out by clicking the play button and interacting with the wheel to test that it works.
 - Then screenshot your flowcharts and upload your work to the *Silver* badge task on *Week 7* of *Problem Solving* on Bourne to Learn.
@@ -187,14 +188,13 @@
 :END:
 *** Learning Strand: Algorithms
 - In the same "Big Wheel" mimic file you were using for Silver we are now going to add variables.
-- Follow the steps below:
-  1. Use variable *x* to count how many times the ride is used. This could be done either by adding the increment *Let* instruction to the existing flowchart from the Silver task, or by creating a separate flowchart, as shown here.
+
+  *Task 1* -  Use variable *x* to count how many times the ride is used. This could be done either by adding the increment *Let* instruction to the existing flowchart from the Silver task, or by creating a separate flowchart, as shown here.
 [[./img/flowol_variables.png]]
-  2. Construct this counting program to increase the variable y each time a seat passes the steps, i.e. each time the virtual input goes off and on. 
+  *Task 2* - Construct this counting program to increase the variable y each time a seat passes the steps, i.e. each time the virtual input goes off and on. 
   - Since there are 7 seats, each rotation of the wheel should increase the variable y by 7.
   - Now modify your program by introducing a decision symbol, to stop the wheel automatically after it has rotated 3 times.
-[[./img/week7task5.png]]
-  3. Now that you have learned how to use the Steps input, create a subroutine which rotates the wheel and stops briefly at each of the seven seats for passengers to get on or off.
+  *Task 3* - Now that you have learned how to use the Steps input, create a subroutine which rotates the wheel and stops briefly at each of the seven seats for passengers to get on or off.
   Call this subroutine twice; once at the beginning to load the wheel with passengers, and then at the end to unload.
 
 - Test out your flowcharts by clicking the play button and using the buttons to see that your flowcharts work.
